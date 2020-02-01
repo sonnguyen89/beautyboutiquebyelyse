@@ -12,6 +12,8 @@ else {
 
         get_template_part( 'template-parts/front-page/promo' );
 
+        get_template_part( 'template-parts/front-page/booking' );
+
         get_template_part( 'template-parts/front-page/testimo' );
 
         ?>
