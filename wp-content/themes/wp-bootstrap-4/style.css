@@ -423,6 +423,7 @@ div.jumbotron.hero-technology {
   padding-bottom: 240px;
   background-attachment: local;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 
 h1.hero-title, h2.hero-title, h3.hero-title {

@@ -12,6 +12,8 @@ else {
 
         get_template_part( 'template-parts/front-page/promo' );
 
+        get_template_part( 'template-parts/front-page/testimo' );
+
         ?>
         <?php if ( get_theme_mod( 'show_main_content', 1 ) ) : ?>
         <section class="wp-bp-main-content">
