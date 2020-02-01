@@ -354,3 +354,99 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
 --------------------------------------------------------------*/
 @media (min-width: 768px) { .hentry.card .card-body { padding: 2.5rem 4rem; }
   .wb-hide-mobile-sidebar .wp-bp-sidebar-width { display: block; } }
+
+/*--------------------------------------------------------------
+# top info Sections
+--------------------------------------------------------------*/
+.index-top-info {
+  font-weight: 400;
+  height: 50px;
+  background-color: #FCA7C8;
+}
+
+@media (max-width: 768px) {
+  .index-top-info {
+    display: none !important;
+  }
+}
+
+.index-top-info .social-links {
+  text-decoration: none;
+}
+
+.index-top-info .social-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.index-top-info .social-links ul li {
+  display: inline-flex;
+}
+
+.index-top-info .social-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.index-top-info .social-links ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.index-top-info .social-links .book-now-button {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+.index-top-info .contact-information {
+  color: white;
+}
+
+.index-top-info .contact-information span:not(:last-child) {
+  margin-right: 15px;
+}
+
+.index-top-info i {
+  /*color: var(--color-orange);*/
+}
+/*--------------------------------------------------------------
+# Banner Section
+--------------------------------------------------------------*/
+div.jumbotron.hero-technology {
+  color: #fff;
+  text-align: center;
+  background-image: url('assets/images/banner_image.png');
+  background-size: cover;
+  background-position-y: 38%;
+  padding-top: 200px;
+  padding-bottom: 240px;
+  background-attachment: local;
+  background-repeat: no-repeat;
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  color: #fff;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+p.hero-subtitle {
+  font-family: Roboto;
+  font-size: 29px;
+  max-width: 600px;
+  margin: 25px auto;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+div.jumbotron.hero-technology .hero-button{
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 30px;
+  color: #fff;
+  font-size: 29px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}

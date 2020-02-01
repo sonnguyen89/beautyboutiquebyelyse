@@ -21,7 +21,34 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<link rel="stylesheet" href="/wp-content/themes/wp-bootstrap-4/assets/fonts/font-awesome.min.css">
 <div id="page" class="site">
+    <!-- top site info and contracts section --->
+    <div class="d-flex flex-row align-items-center index-top-info">
+        <div class="container">
+            <div class="row">
+                <div class="col contact-information">
+                    <div class="float-left" style="padding:7px"><span><i class="fa fa-phone"></i>&nbsp;0488 125 904</span><span><i class="fa fa-map-marker"></i>&nbsp;Greenvale, Victoria</span></div>
+                </div>
+                <div class="col social-links">
+                    <div class="float-right">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            <li><a href="<?php echo get_home_url(); ?>/book-online/" style="font-weight: 500" class="book-now-button">BOOK NOW</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- logo section -->
+
+    <?php  get_template_part( 'template-parts/front-page/cover' ); ?>
 
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-4' ); ?></a>
 

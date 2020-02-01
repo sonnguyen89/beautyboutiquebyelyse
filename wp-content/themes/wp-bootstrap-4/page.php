@@ -18,7 +18,6 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 }
 else {
     if ( ! is_page_template() ) {
-        get_template_part( 'template-parts/front-page/cover' );
         get_header();
         ?>
         <section class="wp-bp-main-content">

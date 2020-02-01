@@ -6,12 +6,13 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 else {
     if ( ! is_page_template() ) {
 
-        get_template_part( 'template-parts/front-page/cover' );
         get_header();
-        get_template_part( 'template-parts/front-page/services' );
+        //get_template_part( 'template-parts/front-page/services' );
+        get_template_part( 'template-parts/front-page/banner' );
+
+        get_template_part( 'template-parts/front-page/promo' );
 
         ?>
-
         <?php if ( get_theme_mod( 'show_main_content', 1 ) ) : ?>
         <section class="wp-bp-main-content">
             <div class="container">
@@ -36,3 +37,7 @@ else {
     }
 }
 ?>
+
+<link rel="stylesheet" href="/wp-content/themes/wp-bootstrap-4/assets/css/Testimonial-Slider-9.css">
+<link rel="stylesheet" href="/wp-content/themes/wp-bootstrap-4/assets/css/Testimonial-Slider-9-1.css">
+<script src="/wp-content/themes/wp-bootstrap-4/assets/js/Testimonial-Slider-9.js"></script>
