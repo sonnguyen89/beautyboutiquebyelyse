@@ -277,17 +277,17 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 
 .custom-logo-link { margin-right: 1rem; }
 
-.site-title a, .navbar-dark .navbar-brand, .site-description { color: #fff; margin-bottom: 0; }
+.site-title a, .navbar-dark .navbar-brand, .site-description { color: #343a40; margin-bottom: 0; }
 
 .navbar-brand { font-size: 1.5rem; }
 
-.navbar-dark .navbar-nav .nav-link { color: #fff; opacity: 0.5; }
+.navbar-dark .navbar-nav .nav-link { color: #212529; opacity: 1; text-transform: uppercase;}
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus { color: #fff; opacity: 0.75; }
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus { color: #343a40; opacity: 1; border-bottom: 2px solid #343a40; transition: none;}
 
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active { color: #fff; opacity: 1; }
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active { color: #212529; opacity: 1;  border-bottom: 2px solid #343a40;}
 
-.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus { color: #fff; }
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus { color: #fff;}
 
 .navbar-dark .navbar-nav .dropdown-menu .active > .nav-link { color: #212529; }
 
@@ -297,9 +297,9 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 
 .wb-hide-mobile-sidebar .wp-bp-sidebar-width { display: none; }
 
-.navbar-toggler { background-color: #343a40; }
+.navbar-toggler { background-color: #e99cb2; }
 
-.site-header { border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+.site-header { border-bottom: 1px solid #fff;; }
 
 body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padding: 2rem; border: 1px solid rgba(0, 0, 0, 0.125); }
 
@@ -309,26 +309,42 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
 
 .wb-bp-front-page .site-header { border-bottom: 0; }
 
-.wb-bp-front-page .wp-bs-4-jumbotron { padding: 0; background-size: cover; background-position: center; background-color: #343a40; border-radius: 0; }
-
+.page-template-default .wp-bs-4-jumbotron,
+.wb-bp-front-page .wp-bs-4-jumbotron { padding: 0;
+  background-size: 400px;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 0;
+  background-repeat: no-repeat;
+}
+.page-template-default  .wp-bs-4-jumbotron .wp-bp-jumbo-overlay,
 .wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay { padding: 10rem 2rem; /* background: rgba(#212529, 0.7); */ }
 
+.page-template-default .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .lead,
 .wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .lead { opacity: .75; }
 
+.page-template-default .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading,
 .wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading { font-weight: 600; font-size: 3rem; margin-bottom: 1rem; }
 
+.page-template-default .wp-bp-services-section,
 .wb-bp-front-page .wp-bp-services-section { padding: 4rem 0; }
 
+.page-template-default .wp-bp-main-content,
 .wb-bp-front-page .wp-bp-main-content { padding: 4rem 0; }
 
+.page-template-default .wp-bp-main-content p,
 .wb-bp-front-page .wp-bp-main-content p { font-size: 1.25rem; font-weight: 300; }
 
+.page-template-default  .wp-bp-main-content blockquote ,
 .wb-bp-front-page .wp-bp-main-content blockquote { font-size: 1.35rem; }
 
+.page-template-default  .wp-bp-main-content blockquote p ,
 .wb-bp-front-page .wp-bp-main-content blockquote p { font-size: 1.35rem; }
 
+.page-template-default .wp-bp-main-content .post-thumbnail ,
 .wb-bp-front-page .wp-bp-main-content .post-thumbnail { margin-bottom: 1rem; margin-top: 0.5rem; }
 
+.page-template-default .wp-bp-feat-card-img,
 .wb-bp-front-page .wp-bp-feat-card-img { -o-object-fit: cover; object-fit: cover; height: 200px; width: 100%; }
 
 .wp-caption .wp-caption-text { font-size: 0.95rem; }

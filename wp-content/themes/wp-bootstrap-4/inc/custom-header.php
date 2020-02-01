@@ -18,9 +18,9 @@
  */
 function wp_bootstrap_4_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'wp_bootstrap_4_custom_header_args', array(
-		'default-image'          => get_template_directory_uri() . '/assets/images/default-cover-img.jpeg',
+		'default-image'          => get_template_directory_uri() . '/assets/images/beauty_boutique_by_elyse_logo.jpg',
 		'default-text-color'     => 'ffffff',
-		'width'                  => 1440,
+		'width'                  => 500,
 		'height'                 => 500,
 		'flex-height'            => true,
 		'flex-width'             => true,
@@ -47,11 +47,12 @@ if ( ! function_exists( 'wp_bootstrap_4_header_style' ) ) :
 
 		if ( get_header_image() ) : ?>
 			<style type="text/css">
+                .page-template-default  .wp-bs-4-jumbotron,
 				.wb-bp-front-page .wp-bs-4-jumbotron {
 					background-image: url(<?php echo esc_url( get_header_image() ); ?>);
 				}
 				.wp-bp-jumbo-overlay {
-					background: rgba(33,37,41, 0.7);
+					/*background: rgba(33,37,41, 0.7);*/
 				}
 			</style>
 		<?php

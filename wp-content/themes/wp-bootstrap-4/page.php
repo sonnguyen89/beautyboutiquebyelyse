@@ -12,56 +12,33 @@
  * @package WP_Bootstrap_4
  */
 
-get_header(); ?>
 
-<?php
-	$default_sidebar_position = get_theme_mod( 'default_sidebar_position', 'right' );
+if ( 'posts' == get_option( 'show_on_front' ) ) {
+    include( get_home_template() );
+}
+else {
+    if ( ! is_page_template() ) {
+        get_template_part( 'template-parts/front-page/cover' );
+        get_header();
+        ?>
+        <section class="wp-bp-main-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <h2 class="text-center mb-4"><?php the_title(); ?></h2>
+                            <?php wp_bootstrap_4_post_thumbnail(); ?>
+                            <?php the_content(); ?>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+        get_footer();
+    }
+    else {
+        include( get_page_template() );
+    }
+}
 ?>
-
-	<div class="container">
-		<div class="row">
-
-			<?php if ( $default_sidebar_position === 'no' ) : ?>
-				<div class="col-md-12 wp-bp-content-width">
-			<?php else : ?>
-				<div class="col-md-8 wp-bp-content-width">
-			<?php endif; ?>
-
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main">
-
-						<?php
-						while ( have_posts() ) : the_post();
-
-							get_template_part( 'template-parts/content', 'page' );
-
-							// If comments are open or we have at least one comment, load up the comment template.
-							if ( comments_open() || get_comments_number() ) :
-								comments_template();
-							endif;
-
-						endwhile; // End of the loop.
-						?>
-
-					</main><!-- #main -->
-				</div><!-- #primary -->
-			</div>
-			<!-- /.col-md-8 -->
-
-			<?php if ( $default_sidebar_position != 'no' ) : ?>
-				<?php if ( $default_sidebar_position === 'right' ) : ?>
-					<div class="col-md-4 wp-bp-sidebar-width">
-				<?php elseif ( $default_sidebar_position === 'left' ) : ?>
-					<div class="col-md-4 order-md-first wp-bp-sidebar-width">
-				<?php endif; ?>
-						<?php get_sidebar(); ?>
-					</div>
-					<!-- /.col-md-4 -->
-			<?php endif; ?>
-		</div>
-		<!-- /.row -->
-	</div>
-	<!-- /.container -->
-
-<?php
-get_footer();

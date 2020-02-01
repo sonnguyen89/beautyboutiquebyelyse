@@ -22,6 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-4' ); ?></a>
 
 	<header id="masthead" class="site-header <?php if ( get_theme_mod( 'sticky_header', 0 ) ) : echo 'sticky-top'; endif; ?>">
@@ -29,7 +30,7 @@
 			<?php if( get_theme_mod( 'header_within_container', 0 ) ) : ?><div class="container"><?php endif; ?>
 				<?php the_custom_logo(); ?>
 
-				<div class="site-branding-text">
+				<div class="site-branding-text" style="display:none">
 					<?php
 						if ( is_front_page() && is_home() ) : ?>
 		                    <h1 class="site-title h3 mb-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand mb-0"><?php bloginfo( 'name' ); ?></a></h1>
@@ -58,7 +59,7 @@
 						'container'       => 'div',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'primary-menu-wrap',
-						'menu_class'      => 'navbar-nav ml-auto',
+						'menu_class'      => 'navbar-nav mx-auto nav-fill w-50',
 			            'fallback_cb'     => '__return_false',
 			            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 			            'depth'           => 2,

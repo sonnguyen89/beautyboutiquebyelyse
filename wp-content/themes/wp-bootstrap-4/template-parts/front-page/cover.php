@@ -4,7 +4,7 @@ $default_cover_lead = get_bloginfo( 'description' );
 ?>
 
 
-<section class="jumbotron text-center wp-bs-4-jumbotron border-bottom text-white">
+<section class="jumbotron text-center wp-bs-4-jumbotron text-white">
     <div class="wp-bp-jumbo-overlay">
         <div class="container">
             <h1 class="jumbotron-heading"><?php echo wp_kses_post( get_theme_mod( 'front_cover_title', $default_cover_title ) ); ?></h1>

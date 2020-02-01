@@ -5,9 +5,9 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 }
 else {
     if ( ! is_page_template() ) {
-        get_header();
 
         get_template_part( 'template-parts/front-page/cover' );
+        get_header();
         get_template_part( 'template-parts/front-page/services' );
 
         ?>
