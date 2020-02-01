@@ -451,3 +451,43 @@ div.jumbotron.hero-technology .hero-button{
   font-weight: 500;
   text-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
+/*--------------------------------------------------------------
+# booking form  Section
+--------------------------------------------------------------*/
+.page-template-default .wp-bp-booking-section,
+.wb-bp-front-page .wp-bp-booking-section {
+  background-image: url("assets/images/glitter_background.jpg");
+  padding: 4rem 0;
+}
+
+#frm_form_1_container .frm_form_title {
+  text-align: center;color: #fff; text-transform: uppercase;
+  font-size: 40px;
+}
+#frm_form_1_container .frm_description p{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+#frm_form_1_container
+{
+  background-color: #C9B889;
+  padding: 20px;
+}
+#frm_form_1_container.frm_style_formidable-style.with_frm_style input[type=text],
+#frm_form_1_container.frm_style_formidable-style.with_frm_style select,
+#frm_form_1_container.frm_style_formidable-style.with_frm_style input[type=tel],
+#frm_form_1_container.frm_style_formidable-style.with_frm_style input[type=email]
+{
+  height: 40px;
+  line-height: 1.3;
+  border-radius:0;
+}
+
+#frm_form_1_container.frm_style_formidable-style.with_frm_style .frm_primary_label {
+  display: none;
+}
+
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-month {
+  float:left;
+}

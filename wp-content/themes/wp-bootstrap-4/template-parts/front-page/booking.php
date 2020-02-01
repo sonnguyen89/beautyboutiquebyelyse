@@ -1,8 +1,9 @@
-<section class="wp-bp-services-section bg-white">
+<section class="wp-bp-booking-section bg-white">
     <div class="container">
-        <div class="row">
-            <?php   echo do_shortcode('[contact-form-7 id="51" title="Contact form 1"]'); ?>
-
+        <div class="row justify-content-md-center">
+            <div class="col-md-8">
+            <?php   echo do_shortcode('[formidable id=1 title=true description=true]'); ?>
+            </div>
         </div>
     </div>
 </section>
