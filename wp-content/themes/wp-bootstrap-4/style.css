@@ -505,3 +505,36 @@ div.jumbotron.hero-technology .hero-button{
   font-weight: 500;
   font-family: Roboto, sans-serif;
 }
+/*--------------------------------------------------------------
+# booking form  Section
+--------------------------------------------------------------*/
+.page-template-default .wp-bp-contract-content,
+.wb-bp-front-page  .wp-bp-contract-content {
+  background-color: #fff;
+  color: #999999;
+  font-family: Roboto, sans-serif;
+}
+.wb-bp-front-page  .wp-bp-contract-content .social-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.wb-bp-front-page  .wp-bp-contract-content .social-links ul a {
+  color: #999999;
+  text-decoration: none;
+}
+.wb-bp-front-page  .wp-bp-contract-content .social-links
+{
+  position: absolute;
+  top: 40%;
+  margin: auto;
+  font-size: 20px;
+  left: 8%;
+}
+.wb-bp-front-page  .wp-bp-contract-content .social-links i {
+  margin-right: 30px;
+}
+.wb-bp-front-page  .wp-bp-contract-content img
+{
+  width: 80%;
+}

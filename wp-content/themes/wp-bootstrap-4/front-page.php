@@ -16,6 +16,8 @@ else {
 
         get_template_part( 'template-parts/front-page/testimo' );
 
+        get_template_part( 'template-parts/front-page/contract' );
+
         ?>
         <?php if ( get_theme_mod( 'show_main_content', 1 ) ) : ?>
         <section class="wp-bp-main-content">
