@@ -473,12 +473,14 @@ div.jumbotron.hero-technology .hero-button{
 {
   background-color: #C9B889;
   padding: 20px;
+  font-family: Roboto, sans-serif;
 }
 #frm_form_1_container.frm_style_formidable-style.with_frm_style input[type=text],
 #frm_form_1_container.frm_style_formidable-style.with_frm_style select,
 #frm_form_1_container.frm_style_formidable-style.with_frm_style input[type=tel],
 #frm_form_1_container.frm_style_formidable-style.with_frm_style input[type=email]
 {
+  color: #a1a1aa;
   height: 40px;
   line-height: 1.3;
   border-radius:0;
@@ -490,4 +492,16 @@ div.jumbotron.hero-technology .hero-button{
 
 .ui-datepicker .ui-datepicker-title select.ui-datepicker-month {
   float:left;
+}
+
+#frm_form_1_container.frm_style_formidable-style.with_frm_style .frm_submit button {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 30px 20px;
+  font-size: 20px;
+  background: transparent;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
 }

@@ -46,12 +46,14 @@
 
     <!-- Left Control -->
     <a class="carousel-control-prev" href="#testimonial_095" data-slide="prev">
-        <span class="fa fa-chevron-left"></span>
+        <!--<span class="fal fa-chevron-left"></span>-->
+        <img src="/wp-content/themes/wp-bootstrap-4/assets/images/left-arrow.png" />
     </a>
 
     <!-- Right Control -->
     <a class="carousel-control-next" href="#testimonial_095" data-slide="next">
-        <span class="fa fa-chevron-right"></span>
+        <!-- <span class="fa fa-chevron-right"></span>-->
+        <img src="/wp-content/themes/wp-bootstrap-4/assets/images/right-arrow.png" />
     </a>
 
     <!-- Indicators -->

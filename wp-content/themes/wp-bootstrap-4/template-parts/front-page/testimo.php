@@ -13,8 +13,8 @@
         <div class="carousel-item active">
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
-                <p class="hero-subtitle">Elyse from Beauty Boutique was so nice and the result
-                    speaks for themselves. I look and feel 10 years younger!
+                <p class="hero-subtitle">Elyse from Beauty Boutique was so nice and the result<br/>
+                    speaks for themselves. I look and feel 10 years younger!<br/>
                     – Samantha Smith</p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
@@ -24,8 +24,8 @@
         <div class="carousel-item">
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
-                <p class="hero-subtitle">Elyse from Beauty Boutique was so nice and the result
-                    speaks for themselves. I look and feel 10 years younger!
+                <p class="hero-subtitle">Elyse from Beauty Boutique was so nice and the result<br/>
+                    speaks for themselves. I look and feel 10 years younger!<br/>
                     – Samantha Smith</p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
@@ -35,8 +35,8 @@
         <div class="carousel-item">
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
-                <p class="hero-subtitle">Elyse from Beauty Boutique was so nice and the result
-                    speaks for themselves. I look and feel 10 years younger!
+                <p class="hero-subtitle">Elyse from Beauty Boutique was so nice and the result<br/>
+                    speaks for themselves. I look and feel 10 years younger! <br/>
                     – Samantha Smith</p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
@@ -46,12 +46,14 @@
 
     <!-- Left Control -->
     <a class="carousel-control-prev" href="#testimonial_096" data-slide="prev">
-        <span class="fa fa-chevron-left"></span>
+        <!--<span class="fal fa-chevron-left"></span>-->
+        <img src="/wp-content/themes/wp-bootstrap-4/assets/images/left-arrow.png" />
     </a>
 
     <!-- Right Control -->
     <a class="carousel-control-next" href="#testimonial_096" data-slide="next">
-        <span class="fa fa-chevron-right"></span>
+       <!-- <span class="fa fa-chevron-right"></span>-->
+        <img src="/wp-content/themes/wp-bootstrap-4/assets/images/right-arrow.png" />
     </a>
 
     <!-- Indicators -->
