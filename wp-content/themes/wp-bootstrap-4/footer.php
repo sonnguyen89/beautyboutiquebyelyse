@@ -17,13 +17,13 @@
 
 		<div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="site-info text-left">
+                <div class="col-sm">
+                    <div class="site-info">
                         © 2020 Beauty Boutique By Elyse. Website & Digital Marketing By  <a href="<?php echo esc_url( 'https://www.uberink.com.au/' ); ?>"><?php esc_html_e( 'UBERINK', 'wp-bootstrap-4' ); ?></a>
                     </div><!-- .site-info -->
                 </div>
-                <div class="col">
-                    <div class="text-right social-links">
+                <div class="col-sm">
+                    <div class="social-links">
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>

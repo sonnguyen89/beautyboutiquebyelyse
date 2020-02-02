@@ -299,7 +299,17 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
   width: 100%;
   height: auto;
 }
+.page-template-default .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info {
+  text-align: left!important;
+}
+.page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links {
+  text-align: right!important;
+}
 @media (max-width: 560px) {
+  .page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links,
+  .page-template-default .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info {
+    text-align: center!important;
+  }
 
   .page-template-default .site-footer, .page-template-full-width .site-footer, .wb-bp-front-page .site-footer {
       background-color: #FCA7C8;
