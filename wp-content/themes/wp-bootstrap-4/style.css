@@ -151,7 +151,7 @@ blockquote p:last-child { margin-bottom: 0; }
 
 .navbar-dark .navbar-nav .dropdown-menu a { display: block; width: 100%; padding: .25rem 1.5rem; clear: both; font-weight: 400; color: #212529; text-align: inherit; white-space: nowrap; background-color: transparent; border: 0; }
 
-.site-footer { padding-top: 3rem; padding-bottom: 3rem; }
+.site-footer { padding-top: 1rem; padding-bottom: 1rem; }
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { float: right; text-align: right; width: 50%; }
 
@@ -293,7 +293,15 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 
 .navbar-dark .navbar-nav .dropdown-menu .nav-link:hover, .navbar-dark .navbar-nav .dropdown-menu .nav-link:focus { color: #212529; }
 
-.page-template-full-width .site-footer.mt-4, .wb-bp-front-page .site-footer.mt-4 { margin-top: 0 !important; }
+.page-template-full-width .site-footer, .wb-bp-front-page .site-footer { margin-top: 0 !important;background-color: #FCA7C8;font-family: Roboto, sans-serif;color:#fff }
+
+.site-footer a {  color: #ffffff !important; }
+
+.site-footer .social-links ul { list-style: none; padding-left: 0;  margin: 0;}
+.site-footer .social-links ul li {   display: inline-flex; }
+.site-footer .social-links ul li:not(:last-child) {  margin-right: 15px;}
+
+.site-footer .social-links ul li a {  color: white;  text-decoration: none; }
 
 .wb-hide-mobile-sidebar .wp-bp-sidebar-width { display: none; }
 
