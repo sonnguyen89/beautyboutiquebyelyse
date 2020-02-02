@@ -293,7 +293,12 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 
 .navbar-dark .navbar-nav .dropdown-menu .nav-link:hover, .navbar-dark .navbar-nav .dropdown-menu .nav-link:focus { color: #212529; }
 
-.page-template-full-width .site-footer, .wb-bp-front-page .site-footer { margin-top: 0 !important;background-color: #FCA7C8;font-family: Roboto, sans-serif;color:#fff }
+.page-template-default .site-footer, .page-template-full-width .site-footer, .wb-bp-front-page .site-footer {background-color: #FCA7C8;font-family: Roboto, sans-serif;color:#fff;
+  position: absolute;
+  bottom: -43px;
+  width: 100%;
+  height: auto;
+}
 
 .site-footer a {  color: #ffffff !important; }
 
@@ -521,6 +526,7 @@ div.jumbotron.hero-technology .hero-button{
   background-color: #fff;
   color: #999999;
   font-family: Roboto, sans-serif;
+  margin-bottom: 20px;
 }
 .wb-bp-front-page  .wp-bp-contract-content .social-links ul {
   list-style: none;
@@ -545,4 +551,9 @@ div.jumbotron.hero-technology .hero-button{
 .wb-bp-front-page  .wp-bp-contract-content img
 {
   width: 80%;
+}
+
+#page {
+  position: relative;
+  min-height: 100vh;
 }
