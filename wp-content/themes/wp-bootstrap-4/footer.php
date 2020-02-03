@@ -40,5 +40,11 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript">
+    console.log('test');
+    jQuery('#frm_form_1_container.frm_style_formidable-style.with_frm_style #field_rmgm1 option:first').html('Preferred Time');
+
+</script>
+
 </body>
 </html>

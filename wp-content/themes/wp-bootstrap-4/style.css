@@ -524,6 +524,7 @@ div.jumbotron.hero-technology .hero-button{
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+  word-break: break-word;
 }
 #frm_form_1_container
 {
@@ -561,6 +562,14 @@ div.jumbotron.hero-technology .hero-button{
   padding: 30px;
   font-size: 29px;
 }
+.ui-datepicker .ui-widget-header, .ui-datepicker .ui-datepicker-header {
+  background: #c9b889 !important;
+  color: #ffffff !important;
+}
+.ui-datepicker td.ui-datepicker-current-day, .ui-datepicker td .ui-state-hover, .ui-datepicker thead {
+  background: #fca7c8 !important;
+  color: #ffffff !important;
+}
 /*--------------------------------------------------------------
 # booking form  Section
 --------------------------------------------------------------*/
@@ -569,7 +578,7 @@ div.jumbotron.hero-technology .hero-button{
   background-color: #fff;
   color: #999999;
   font-family: Roboto, sans-serif;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .wb-bp-front-page  .wp-bp-contract-content .social-links ul {
   list-style: none;

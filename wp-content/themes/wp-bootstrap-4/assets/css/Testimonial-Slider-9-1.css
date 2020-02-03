@@ -134,6 +134,12 @@
   font-family: Roboto, sans-serif;
   font-size: 3rem;
 }
+@media (max-width: 560px) {
+  .testimonial_095_slide > h1.slider-title {
+    font-size: 2rem;
+    margin:30px 0 0;
+  }
+}
 .testimonial_095_header {
   top: 0;
   left: 0;
