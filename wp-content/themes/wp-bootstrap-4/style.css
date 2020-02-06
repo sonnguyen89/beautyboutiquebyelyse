@@ -549,6 +549,7 @@ div.jumbotron.hero-technology .hero-button:hover {
   height: 50px;
   line-height: 1.3;
   border-radius:0;
+  border-color: #ffffff;
 }
 
 #frm_form_1_container.frm_style_formidable-style.with_frm_style .frm_primary_label {
@@ -609,7 +610,8 @@ div.jumbotron.hero-technology .hero-button:hover {
   left: 8%;
 }
 .wb-bp-front-page  .wp-bp-contract-content .social-links i {
-  margin-right: 30px;
+  margin-right: 23px;
+  font-size: 25px;
 }
 @media (max-width: 760px) {
   .wb-bp-front-page  .wp-bp-contract-content .social-links
