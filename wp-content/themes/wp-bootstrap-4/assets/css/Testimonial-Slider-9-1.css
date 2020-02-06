@@ -33,7 +33,7 @@
   margin: 0;
   width: 100%;
   font-size: 0;
-  height: 35px;
+  height: 40px;
   bottom: 0;
   padding: 0 5px;
   display: block;
@@ -134,7 +134,7 @@
   font-family: Roboto, sans-serif;
   font-size: 3rem;
 }
-@media (max-width: 560px) {
+@media (max-width: 760px) {
   .testimonial_095_slide > h1.slider-title {
     font-size: 2rem;
     margin:30px 0 0;
@@ -151,7 +151,7 @@
   position: relative;
 }
 #testimonial_096 .testimonial_095_header {
-  margin: 30px auto 0;
+  margin: 40px auto 0;
 }
 .testimonial_095_header > h5 {
   color: #f2f2f2;
@@ -284,7 +284,7 @@
   }
 }
 
-@media only screen and (max-width:560px) {
+@media only screen and (max-width:760px) {
   .testimonial_095_header > h5 {
     font-size: 2rem;
   }
