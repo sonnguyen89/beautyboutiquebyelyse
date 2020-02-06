@@ -36,7 +36,7 @@
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            <li><a href="mailto:beautyboutiquebyelyse@outlook.com"><i class="fa fa-envelope"></i></a></li>
                             <li><a href="<?php echo get_home_url(); ?>/book-online/" style="font-weight: 500" class="book-now-button">BOOK NOW</a></li>
                         </ul>
                     </div>
