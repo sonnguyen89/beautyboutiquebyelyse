@@ -41,9 +41,20 @@
 <?php wp_footer(); ?>
 
 <script type="text/javascript">
-    console.log('test');
+
     jQuery('#frm_form_1_container.frm_style_formidable-style.with_frm_style #field_rmgm1 option:first').html('Preferred Time');
 
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157889750-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-157889750-1');
 </script>
 
 </body>
