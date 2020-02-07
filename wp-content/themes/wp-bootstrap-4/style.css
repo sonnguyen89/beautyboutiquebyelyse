@@ -302,10 +302,26 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 .page-template-default .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info {
   text-align: left!important;
 }
-.page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links {
+.page-template-default .site-footer .mobile-social-links,
+.page-template-full-width .site-footer .mobile-social-links,
+.wb-bp-front-page .site-footer .mobile-social-links {
+  display: none;
+  text-align: center!important;
+}
+.page-template-default .site-footer .social-links, 
+.page-template-full-width .site-footer .social-links, 
+.wb-bp-front-page .site-footer .social-links {
   text-align: right!important;
 }
 @media (max-width: 760px) {
+  .page-template-default .site-footer .mobile-social-links,
+  .page-template-full-width .site-footer .mobile-social-links,
+  .wb-bp-front-page .site-footer .mobile-social-links {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links,
   .page-template-default .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info {
     text-align: center!important;
@@ -317,25 +333,29 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
       color: #fff;
       position: relative;
       font-size: 12px;
-      bottom : 0px;
+      bottom : 0;
   }
   .page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links {
     font-size: 20px;
     margin-top: 10px;
   }
+  .page-template-default .site-footer .social-links,
+  .page-template-full-width .site-footer .social-links,
+  .wb-bp-front-page .site-footer .social-links {
+   display: none;
+  }
 }
 
 .site-footer a {  color: #ffffff !important; }
 
-.site-footer .social-links ul { list-style: none; padding-left: 0;  margin: 0;}
-.site-footer .social-links ul li {   display: inline-flex; }
-.site-footer .social-links ul li:not(:last-child) {  margin-right: 15px;}
-
-.site-footer .social-links ul li a {  color: white;  text-decoration: none; }
+.site-footer .social-links ul,.site-footer .mobile-social-links ul { list-style: none; padding-left: 0;  margin: 0;}
+.site-footer .social-links ul li, .site-footer .mobile-social-links ul li {   display: inline-flex; }
+.site-footer .social-links ul li:not(:last-child) , .site-footer .mobile-social-links ul li:not(:last-child)  {  margin-right: 15px;}
+.site-footer .social-links ul li a, .site-footer .mobile-social-links ul li a  {  color: white;  text-decoration: none; }
 
 .wb-hide-mobile-sidebar .wp-bp-sidebar-width { display: none; }
 
-.navbar-toggler { background-color: #e99cb2; }
+.navbar-toggler { background-color: #fca7c8; }
 
 .site-header { border-bottom: 1px solid #fff;; }
 
@@ -592,6 +612,9 @@ div.jumbotron.hero-technology .hero-button:hover {
   font-family: Roboto, sans-serif;
   padding-bottom: 20px;
 }
+.wb-bp-front-page  .wp-bp-contract-content .mobile-social-links {
+  display: none;
+}
 .wb-bp-front-page  .wp-bp-contract-content .social-links ul {
   list-style: none;
   padding-left: 0;
@@ -608,15 +631,27 @@ div.jumbotron.hero-technology .hero-button:hover {
   margin: auto;
   font-size: 20px;
   left: 8%;
+  float:left;
 }
 .wb-bp-front-page  .wp-bp-contract-content .social-links i {
   margin-right: 23px;
   font-size: 25px;
 }
 @media (max-width: 760px) {
+  .wb-bp-front-page .wp-bp-contract-content img {
+    width: 100% !important;
+  }
   .wb-bp-front-page  .wp-bp-contract-content .social-links
   {
-    font-size: 12px;
+    position: static;
+    font-size: 15px;
+    margin: 0 15%;
+  }
+  .wb-bp-front-page  .wp-bp-contract-content .social-links ul {
+    float:left;
+  }
+  .wb-bp-front-page  .wp-bp-contract-content .social-links ul li{
+    text-align: left;
   }
   .wb-bp-front-page .wp-bp-contract-content .social-links i {
     margin-right: 10px;
