@@ -17,7 +17,7 @@ WP Bootstrap 4 is based on Underscores https://underscores.me/, (C) 2012-2017 Au
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 body { background-color: #f8f9fa; }
-
+body.wb-bp-front-page { background-color: #fff; }
 hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
 
 dt { font-weight: bold; }
@@ -669,4 +669,32 @@ div.jumbotron.hero-technology .hero-button:hover {
 #page {
   position: relative;
   min-height: 100vh;
+}
+
+.page-template-default .wp-bp-main-content .text-center {
+  text-transform: uppercase;
+  color: #c9b88a;
+}
+
+.page-template-default .wp-bp-main-content .treatment-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#fca7c8;
+}
+.page-template-default .wp-bp-main-content .treatment-price {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.page-template-default .wp-bp-main-content .treatment-desc {
+  font-size: 1rem;
+}
+.page-template-default .wp-bp-main-content .treatment-link {
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #212529;
+  color: #212529;
+  padding-bottom: 5px;
+}
+.page-template-default .wp-bp-main-content .treatment-link:hover{
+  text-decoration: none;
 }
