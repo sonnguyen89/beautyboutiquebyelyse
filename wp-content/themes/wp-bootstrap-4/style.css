@@ -670,7 +670,9 @@ div.jumbotron.hero-technology .hero-button:hover {
   position: relative;
   min-height: 100vh;
 }
-
+/*--------------------------------------------------------------
+# advance facial treatment page
+--------------------------------------------------------------*/
 .page-template-default .wp-bp-main-content .text-center {
   text-transform: uppercase;
   color: #c9b88a;
@@ -697,4 +699,26 @@ div.jumbotron.hero-technology .hero-button:hover {
 }
 .page-template-default .wp-bp-main-content .treatment-link:hover{
   text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# menu style
+--------------------------------------------------------------*/
+.navbar-nav .dropdown-menu {
+  border: none;
+  padding: 0;
+}
+.navbar-dark .navbar-nav .dropdown-menu .active > .nav-link {
+  color: #212529;
+  border-bottom: none;
+}
+.navbar-dark .navbar-nav .dropdown-menu .nav-link:hover, .navbar-dark .navbar-nav .dropdown-menu .nav-link:focus {
+  border-bottom: none;
+  background: #fca7c8;
+  color: #fff;
+}
+.navbar-dark .navbar-nav .dropdown-menu a {
+  padding: 0.6rem 1.5rem;
+  text-transform: capitalize;
+  text-align: left;
 }
