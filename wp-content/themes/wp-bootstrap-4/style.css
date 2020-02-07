@@ -313,7 +313,7 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 .wb-bp-front-page .site-footer .social-links {
   text-align: right!important;
 }
-@media (max-width: 760px) {
+@media (max-width: 575px) {
   .page-template-default .site-footer .mobile-social-links,
   .page-template-full-width .site-footer .mobile-social-links,
   .wb-bp-front-page .site-footer .mobile-social-links {
@@ -322,6 +322,14 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .page-template-default .site-footer .social-links,
+  .page-template-full-width .site-footer .social-links,
+  .wb-bp-front-page .site-footer .social-links {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+
   .page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links,
   .page-template-default .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info {
     text-align: center!important;
@@ -338,11 +346,6 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
   .page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links {
     font-size: 20px;
     margin-top: 10px;
-  }
-  .page-template-default .site-footer .social-links,
-  .page-template-full-width .site-footer .social-links,
-  .wb-bp-front-page .site-footer .social-links {
-   display: none;
   }
 }
 
@@ -629,7 +632,7 @@ div.jumbotron.hero-technology .hero-button:hover {
   position: absolute;
   top: 40%;
   margin: auto;
-  font-size: 20px;
+  font-size: 1em;
   left: 8%;
   float:left;
 }
@@ -637,7 +640,7 @@ div.jumbotron.hero-technology .hero-button:hover {
   margin-right: 23px;
   font-size: 25px;
 }
-@media (max-width: 760px) {
+@media (max-width: 575px) {
   .wb-bp-front-page .wp-bp-contract-content img {
     width: 100% !important;
   }
