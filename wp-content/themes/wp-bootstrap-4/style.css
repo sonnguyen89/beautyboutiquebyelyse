@@ -647,8 +647,9 @@ div.jumbotron.hero-technology .hero-button:hover {
   .wb-bp-front-page  .wp-bp-contract-content .social-links
   {
     position: static;
-    font-size: 15px;
-    margin: 0 15%;
+    font-size: 1rem;
+    width: 90%;
+    float: none;
   }
   .wb-bp-front-page  .wp-bp-contract-content .social-links ul {
     float:left;
