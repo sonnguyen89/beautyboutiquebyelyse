@@ -645,6 +645,9 @@ div.jumbotron.hero-technology .hero-button:hover {
   margin-right: 23px;
   font-size: 25px;
 }
+.page-template-default .wp-bp-contract-content img {
+  width: 80% !important;
+}
 @media (max-width: 575px) {
   .page-template-default .wp-bp-contract-content img,
   .wb-bp-front-page .wp-bp-contract-content img {
