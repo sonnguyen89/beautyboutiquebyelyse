@@ -683,6 +683,7 @@ div.jumbotron.hero-technology .hero-button:hover {
   text-transform: uppercase;
   font-weight: bold;
   color:#fca7c8;
+  margin-top: 20px;
 }
 .page-template-default .wp-bp-main-content .treatment-price {
   text-transform: capitalize;
@@ -701,6 +702,9 @@ div.jumbotron.hero-technology .hero-button:hover {
 .page-template-default .wp-bp-main-content .treatment-link:hover{
   text-decoration: none;
 }
+.page-template-default .wp-bp-main-content .treatment-image {
+  width:auto; height: 280px;
+}
 
 /*--------------------------------------------------------------
 # menu style
@@ -708,6 +712,8 @@ div.jumbotron.hero-technology .hero-button:hover {
 .navbar-nav .dropdown-menu {
   border: none;
   padding: 0;
+  top: 90%;
+  left: -2px;
 }
 .navbar-dark .navbar-nav .dropdown-menu .active > .nav-link {
   color: #212529;

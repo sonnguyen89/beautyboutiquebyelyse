@@ -25,13 +25,13 @@ else {
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <?php while ( have_posts() ) : the_post(); ?>
-                            <h2 class="text-center mb-4"><?php the_title(); ?></h2>
+                            <h2 class="text-center mb-5"><?php the_title(); ?></h2>
                             <?php wp_bootstrap_4_post_thumbnail(); ?>
                             <?php //the_content(); ?>
                         <?php endwhile; ?>
                         <div class="row">
                             <div class="col-md-6" style="margin-bottom: 15px;">
-                                <img src="/wp-content/themes/wp-bootstrap-4/assets/images/skin_needling_treatment.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/skin_needling_treatment.jpeg" alt=""/>
                                 <p class="treatment-title">
                                     SKIN NEEDLING
                                 </p>
@@ -46,7 +46,7 @@ else {
 
                             </div>
                             <div class="col-md-6">
-                                <img src="/wp-content/themes/wp-bootstrap-4/assets/images/microdermabrasion_treatment.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/microdermabrasion_treatment.jpg" alt=""/>
                                 <p class="treatment-title">
                                     MICRODERMABRASION
                                 </p>
