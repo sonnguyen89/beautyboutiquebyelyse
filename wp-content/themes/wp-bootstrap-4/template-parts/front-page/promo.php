@@ -15,7 +15,7 @@
             <div class="testimonial_095_slide">
                 <h1 class="slider-title">SUMMER SALE 50% OFF  <br/> LASER HAIR REMOVAL</h1>
                 <p class="hero-subtitle">Throw out the razors. No more waxing.</p>
-                <p><a class="btn hero-button" role="button" href="<?php echo get_home_url(); ?>/book-online/">Learn More</a></p>
+                <p><a class="btn hero-button" role="button" href="#front-page-booking-section">Learn More</a></p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
         <!-- End of First Slide -->
@@ -26,7 +26,7 @@
             <div class="testimonial_095_slide">
                 <h1 class="slider-title">SUMMER SALE 50% OFF  <br/> LASER HAIR REMOVAL</h1>
                 <p class="hero-subtitle">Throw out the razors. No more waxing.</p>
-                <p><a class="btn hero-button" role="button" href="<?php echo get_home_url(); ?>/book-online/">Learn More</a></p>
+                <p><a class="btn hero-button" role="button" href="#front-page-booking-section">Learn More</a></p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
         <!-- End of Second Slide -->
@@ -37,7 +37,7 @@
             <div class="testimonial_095_slide">
                 <h1 class="slider-title">SUMMER SALE 50% OFF  <br/> LASER HAIR REMOVAL</h1>
                 <p class="hero-subtitle">Throw out the razors. No more waxing.</p>
-                <p><a class="btn hero-button" role="button" href="<?php echo get_home_url(); ?>/book-online/">Learn More</a></p>
+                <p><a class="btn hero-button" role="button" href="#front-page-booking-section">Learn More</a></p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
         <!-- End of Third Slide -->

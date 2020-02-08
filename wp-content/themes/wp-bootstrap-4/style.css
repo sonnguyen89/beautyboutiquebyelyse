@@ -742,3 +742,12 @@ div.jumbotron.hero-technology .hero-button:hover {
   text-transform: capitalize;
   text-align: left;
 }
+
+/*--------------------------------------------------------------
+# Book Online content page
+--------------------------------------------------------------*/
+.book-online-content {
+  background-image: url(assets/images/glitter_background.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+}
