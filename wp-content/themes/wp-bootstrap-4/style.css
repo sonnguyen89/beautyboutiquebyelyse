@@ -615,19 +615,23 @@ div.jumbotron.hero-technology .hero-button:hover {
   font-family: Roboto, sans-serif;
   padding-bottom: 20px;
 }
-.wb-bp-front-page  .wp-bp-contract-content .mobile-social-links {
+.page-template-default  .wp-bp-contract-content .mobile-social-links,
+.wb-bp-front-page .wp-bp-contract-content .mobile-social-links {
   display: none;
 }
-.wb-bp-front-page  .wp-bp-contract-content .social-links ul {
+.page-template-default .wp-bp-contract-content .social-links ul,
+.wb-bp-front-page .wp-bp-contract-content .social-links ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.wb-bp-front-page  .wp-bp-contract-content .social-links ul a {
+.page-template-default .wp-bp-contract-content .social-links ul a,
+.wb-bp-front-page .wp-bp-contract-content .social-links ul a {
   color: #999999;
   text-decoration: none;
 }
-.wb-bp-front-page  .wp-bp-contract-content .social-links
+.page-template-default .wp-bp-contract-content .social-links,
+.wb-bp-front-page .wp-bp-contract-content .social-links
 {
   position: absolute;
   top: 40%;
@@ -636,32 +640,38 @@ div.jumbotron.hero-technology .hero-button:hover {
   left: 8%;
   float:left;
 }
-.wb-bp-front-page  .wp-bp-contract-content .social-links i {
+.page-template-default .wp-bp-contract-content .social-links i,
+.wb-bp-front-page .wp-bp-contract-content .social-links i {
   margin-right: 23px;
   font-size: 25px;
 }
 @media (max-width: 575px) {
+  .page-template-default .wp-bp-contract-content img,
   .wb-bp-front-page .wp-bp-contract-content img {
     width: 100% !important;
   }
-  .wb-bp-front-page  .wp-bp-contract-content .social-links
+  .page-template-default .wp-bp-contract-content .social-links,
+  .wb-bp-front-page .wp-bp-contract-content .social-links
   {
     position: static;
     font-size: 1rem;
     width: 90%;
     float: none;
   }
+  .page-template-default .wp-bp-contract-content .social-links ul,
   .wb-bp-front-page  .wp-bp-contract-content .social-links ul {
     float:left;
   }
+  .page-template-default .wp-bp-contract-content .social-links ul li,
   .wb-bp-front-page  .wp-bp-contract-content .social-links ul li{
     text-align: left;
   }
+  .page-template-default .wp-bp-contract-content .social-links i,
   .wb-bp-front-page .wp-bp-contract-content .social-links i {
     margin-right: 10px;
   }
 }
-
+.page-template-default .wp-bp-main-content img,
 .wb-bp-front-page  .wp-bp-contract-content img
 {
   width: 80%;
@@ -700,7 +710,7 @@ div.jumbotron.hero-technology .hero-button:hover {
   padding-bottom: 5px;
 }
 .page-template-default .wp-bp-main-content .treatment-link:hover{
-  text-decoration: none;
+  text-decoration: none;color:#fca7c8; border-bottom: 1px solid #fca7c8;
 }
 .page-template-default .wp-bp-main-content .treatment-image {
   width:auto; height: 280px;

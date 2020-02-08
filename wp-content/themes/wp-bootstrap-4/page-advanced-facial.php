@@ -64,6 +64,10 @@ else {
 
             </div>
         </section>
+        <div class="container-fluid bg-white">
+            <?php  get_template_part( 'template-parts/front-page/contract' ); ?>
+        </div>
+
         <?php
         get_footer();
     }
