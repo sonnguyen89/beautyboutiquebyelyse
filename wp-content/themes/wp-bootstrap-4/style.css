@@ -753,7 +753,9 @@ div.jumbotron.hero-technology .hero-button:hover {
   background-size: contain;
   background-repeat: repeat;
 }
-
+/*--------------------------------------------------------------
+# About us  content page
+--------------------------------------------------------------*/
 .about-image-section {
   background-color: #fca7c8;
 }
@@ -766,4 +768,62 @@ div.jumbotron.hero-technology .hero-button:hover {
 }
 .about-image-section .about-second-image-row img {
   padding-bottom: 40px;
+}
+/*--------------------------------------------------------------
+# Contract us Form
+--------------------------------------------------------------*/
+
+.page-template-default .contact-us-content {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 760px) {
+  #frm_form_2_container .frm_form_title {
+    font-size: 2rem;
+  }
+}
+#frm_form_2_container .frm_description p{
+  text-align: center;
+  color: #fff;
+  word-break: break-word;
+}
+#frm_form_2_container
+{
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: Roboto, sans-serif;
+}
+#frm_form_2_container.frm_style_formidable-style.with_frm_style input[type=text],
+#frm_form_2_container.frm_style_formidable-style.with_frm_style select,
+#frm_form_2_container.frm_style_formidable-style.with_frm_style input[type=tel],
+#frm_form_2_container.frm_style_formidable-style.with_frm_style input[type=email],
+#frm_form_2_container.frm_style_formidable-style.with_frm_style textarea
+{
+  color: #a1a1aa;
+  height: 50px;
+  line-height: 1.3;
+  border-radius:0;
+  border-color: #ffffff;
+}
+#frm_form_2_container.frm_style_formidable-style.with_frm_style textarea {
+  height: auto !important;
+}
+
+#frm_form_2_container.frm_style_formidable-style.with_frm_style .frm_primary_label {
+  display: none;
+}
+
+#frm_form_2_container.frm_style_formidable-style.with_frm_style .frm_submit button {
+  color: #c9b88a;
+  text-decoration: none;
+  border: 1px solid #c9b88a;
+  background: transparent;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  border-radius: 60px;
+  padding: 30px;
+  font-size: 29px;
+}
+#frm_form_2_container.frm_style_formidable-style.with_frm_style .frm_submit button:hover{
+  opacity: 0.7;
 }
