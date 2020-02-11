@@ -615,6 +615,10 @@ div.jumbotron.hero-technology .hero-button:hover {
   font-family: Roboto, sans-serif;
   padding-bottom: 20px;
 }
+.page-template-default .wp-bp-contract-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .page-template-default  .wp-bp-contract-content .mobile-social-links,
 .wb-bp-front-page .wp-bp-contract-content .mobile-social-links {
   display: none;
