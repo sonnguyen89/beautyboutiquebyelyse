@@ -29,7 +29,7 @@ else {
                             <?php wp_bootstrap_4_post_thumbnail(); ?>
                             <?php //the_content(); ?>
                         <?php endwhile; ?>
-                        <div class="row">
+                        <div class="row"  style="margin-bottom: 30px;">
                             <div class="col-md-6" style="margin-bottom: 15px;">
                                 <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/hydrating_facial.jpg" alt=""/>
                                 <p class="treatment-title">
