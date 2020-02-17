@@ -31,30 +31,60 @@ else {
                         <?php endwhile; ?>
                         <div class="row">
                             <div class="col-md-6" style="margin-bottom: 15px;">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/skin_needling_treatment.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/eyebrow_tint.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    SKIN NEEDLING
+                                    Eyebrow Tinting
                                 </p>
                                 <p class="treatment-desc">
-                                    This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, ﬁne lines, wrinkles, uneven skin tone, enlarged pores and sun damage
+
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $150
+                                    Price: $20
                                 </p>
 
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
 
                             </div>
                             <div class="col-md-6">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/microdermabrasion_treatment.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/eyelash_tinting.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    MICRODERMABRASION
+                                    Eyelash Tinting
                                 </p>
                                 <p class="treatment-desc">
-                                    An advanced professional mechanical exfoliation of the skin which will minimise your dead skin cells and impurities. It will also improve skins texture and quality leaving you with healthier, glowing skin.
+
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $70
+                                    Price: $20
+                                </p>
+                                <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6" style="margin-bottom: 15px;">
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/eyelash_and_eyebrow_tinting.jpg" alt=""/>
+                                <p class="treatment-title">
+                                    Eyebrow & Eyelash Tint
+                                </p>
+                                <p class="treatment-desc">
+
+                                </p>
+                                <p class="treatment-price">
+                                    Price: $30
+                                </p>
+
+                                <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
+
+                            </div>
+                            <div class="col-md-6">
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/eyebrow_wax_and_tint.jpg" alt=""/>
+                                <p class="treatment-title">
+                                    Eyebrow Wax & Tint
+                                </p>
+                                <p class="treatment-desc">
+
+                                </p>
+                                <p class="treatment-price">
+                                    Price: $25
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>

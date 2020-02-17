@@ -31,32 +31,19 @@ else {
                         <?php endwhile; ?>
                         <div class="row">
                             <div class="col-md-6" style="margin-bottom: 15px;">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/skin_needling_treatment.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/nails.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    SKIN NEEDLING
+                                    Nails (Shellac Application)
                                 </p>
                                 <p class="treatment-desc">
-                                    This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, ﬁne lines, wrinkles, uneven skin tone, enlarged pores and sun damage
+                                    Using high quality products from Italy, including a extra coat on the nail which is excellent for those who have oilier nail beds to prevent chipping and breaks.
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $150
+                                    Price: $30
                                 </p>
 
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
 
-                            </div>
-                            <div class="col-md-6">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/microdermabrasion_treatment.jpg" alt=""/>
-                                <p class="treatment-title">
-                                    MICRODERMABRASION
-                                </p>
-                                <p class="treatment-desc">
-                                    An advanced professional mechanical exfoliation of the skin which will minimise your dead skin cells and impurities. It will also improve skins texture and quality leaving you with healthier, glowing skin.
-                                </p>
-                                <p class="treatment-price">
-                                    Price: $70
-                                </p>
-                                <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>
                         </div>
                     </div>

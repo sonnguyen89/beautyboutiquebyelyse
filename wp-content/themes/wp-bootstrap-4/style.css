@@ -722,7 +722,7 @@ div.jumbotron.hero-technology .hero-button:hover {
   text-decoration: none;color:#fca7c8; border-bottom: 1px solid #fca7c8;
 }
 .page-template-default .wp-bp-main-content .treatment-image {
-  width:auto; height: 280px;
+  width:100%;
 }
 
 /*--------------------------------------------------------------

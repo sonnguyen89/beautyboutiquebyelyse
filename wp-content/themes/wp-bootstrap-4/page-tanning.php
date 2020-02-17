@@ -31,30 +31,31 @@ else {
                         <?php endwhile; ?>
                         <div class="row">
                             <div class="col-md-6" style="margin-bottom: 15px;">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/skin_needling_treatment.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/spray_tanning.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    SKIN NEEDLING
+                                    Spray Tanning
                                 </p>
                                 <p class="treatment-desc">
-                                    This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, ﬁne lines, wrinkles, uneven skin tone, enlarged pores and sun damage
+
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $150
+                                    Price: $30
                                 </p>
 
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
 
                             </div>
                             <div class="col-md-6">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/microdermabrasion_treatment.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/mobile_spray_tanning.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    MICRODERMABRASION
+                                    Mobile Spray Tanning (I come too you!)
                                 </p>
                                 <p class="treatment-desc">
-                                    An advanced professional mechanical exfoliation of the skin which will minimise your dead skin cells and impurities. It will also improve skins texture and quality leaving you with healthier, glowing skin.
+
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $70
+                                    Price: Depends on location
+
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>
