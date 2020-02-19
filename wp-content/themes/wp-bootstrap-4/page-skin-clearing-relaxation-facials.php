@@ -46,7 +46,7 @@ else {
 
                             </div>
                             <div class="col-md-6">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/Acne_Clearing_Facial.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/acne_clearing_facial_treatment.jpg" alt=""/>
                                 <p class="treatment-title">
                                     Acne Clearing Facial
                                 </p>
