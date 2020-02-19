@@ -13,34 +13,12 @@
         <div class="carousel-item active">
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
-                <h1 class="slider-title">SUMMER SALE 50% OFF  <br/> LASER HAIR REMOVAL</h1>
+                <h1 class="slider-title">Skin needling now $100 <br/> valued at $150 </h1>
                 <p class="hero-subtitle">Throw out the razors. No more waxing.</p>
-                <p><a class="btn hero-button" role="button" href="#front-page-booking-section">Learn More</a></p>
+                <p><a class="btn hero-button" role="button" href="/advanced-facial/">Learn More</a></p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
         <!-- End of First Slide -->
-
-        <!-- Second Slide -->
-        <div class="carousel-item">
-            <!-- Text Layer -->
-            <div class="testimonial_095_slide">
-                <h1 class="slider-title">SUMMER SALE 50% OFF  <br/> LASER HAIR REMOVAL</h1>
-                <p class="hero-subtitle">Throw out the razors. No more waxing.</p>
-                <p><a class="btn hero-button" role="button" href="#front-page-booking-section">Learn More</a></p>
-            </div> <!-- /Text Layer -->
-        </div> <!-- /item -->
-        <!-- End of Second Slide -->
-
-        <!-- Third Slide -->
-        <div class="carousel-item">
-            <!-- Text Layer -->
-            <div class="testimonial_095_slide">
-                <h1 class="slider-title">SUMMER SALE 50% OFF  <br/> LASER HAIR REMOVAL</h1>
-                <p class="hero-subtitle">Throw out the razors. No more waxing.</p>
-                <p><a class="btn hero-button" role="button" href="#front-page-booking-section">Learn More</a></p>
-            </div> <!-- /Text Layer -->
-        </div> <!-- /item -->
-        <!-- End of Third Slide -->
 
     </div> <!-- End of Wrapper For Slides -->
 
@@ -59,7 +37,7 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#testimonial_095" data-slide-to="0" class="active"></li>
-        <li data-target="#testimonial_095" data-slide-to="1"></li>
-        <li data-target="#testimonial_095" data-slide-to="2"></li>
+ <!--       <li data-target="#testimonial_095" data-slide-to="1"></li>
+        <li data-target="#testimonial_095" data-slide-to="2"></li>-->
     </ol>
 </div>

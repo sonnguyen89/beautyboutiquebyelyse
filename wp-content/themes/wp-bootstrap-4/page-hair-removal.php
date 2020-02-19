@@ -31,7 +31,7 @@ else {
                         <?php endwhile; ?>
                         <div class="row">
                             <div class="col-md-6" style="margin-bottom: 15px;">
-                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/Laser_hair_removal.jpg" alt=""/>
+                                <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/laser_hair_removal.jpg" alt=""/>
                                 <p class="treatment-title">
                                     Laser Hair Removal
                                 </p>
