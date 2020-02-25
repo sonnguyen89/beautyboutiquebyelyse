@@ -32,3 +32,4 @@ wp-config.php
 /wp-content/themes/wp-bootstrap-4/inc/libraries/epsilon-framework/package-lock.json
 wordfence-waf.php
 wp-content/wflogs/
+.user.ini
