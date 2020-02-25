@@ -31,5 +31,5 @@ wp-config.php
 /wp-content/themes/wp-bootstrap-4/package-lock.json
 /wp-content/themes/wp-bootstrap-4/inc/libraries/epsilon-framework/package-lock.json
 wordfence-waf.php
-wp-content/wflogs/
+/wp-content/wflogs/
 .user.ini
