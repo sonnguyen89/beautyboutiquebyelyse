@@ -54,7 +54,7 @@ else {
                                     An advanced professional mechanical exfoliation of the skin which will minimise your dead skin cells and impurities. It will also improve skins texture and quality leaving you with healthier, glowing skin.
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $70
+                                    Price: $60
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>

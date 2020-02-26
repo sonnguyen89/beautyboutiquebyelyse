@@ -74,7 +74,7 @@ else {
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>
                         </div>
-                        <h2 class="text-center mb-5">Add Ons</h2>
+                     <!--   <h2 class="text-center mb-5">Add Ons</h2>
                         <div class="row">
                             <div class="col-md-6" style="margin-bottom: 15px;">
                                 <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/add_on_steam.jpg" alt=""/>
@@ -104,7 +104,7 @@ else {
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
