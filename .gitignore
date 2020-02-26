@@ -33,3 +33,4 @@ wp-config.php
 wordfence-waf.php
 /wp-content/wflogs/
 .user.ini
+/wp-content/wflogs/config-livewaf.php
