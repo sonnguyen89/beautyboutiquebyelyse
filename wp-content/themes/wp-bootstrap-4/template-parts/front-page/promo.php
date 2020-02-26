@@ -14,7 +14,7 @@
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
                 <h1 class="slider-title">Skin needling now $100 <br/> valued at $150 </h1>
-                <p class="hero-subtitle">Throw out the razors. No more waxing.</p>
+                <p class="hero-subtitle"></p>
                 <p><a class="btn hero-button" role="button" href="/advanced-facial/">Learn More</a></p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
