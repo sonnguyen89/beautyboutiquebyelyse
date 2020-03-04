@@ -35,7 +35,7 @@ else {
                                     About The Beauty Boutique
                                 </p>
                                 <p class="treatment-desc  text-center">
-                                    Beauty Boutique By Elyse is a rst-class Beauty and Laser Therapy Clinic. Elyseis a highly qualied and passionate Beauty and Laser Therapist who iscommitted to oering her clients the very best treatments using the mostinnovative and modern technology. In the past Elyse has worked with some of the best salons and beauty experts in Melbourne before eventually opening herown salon Beauty Boutique By Elyse. Her love and dedication to the Industry isundeniable.
+                                    Beauty Boutique By Elyse is a first-class Beauty and Laser Therapy Clinic. Elyse is a highly qualified and passionate Beauty and Laser Therapist who is committed to offering her clients the very best treatments using the most innovative and modern technology. In the past Elyse has worked with some of the best salons and beauty experts in Melbourne before eventually opening her own salon Beauty Boutique By Elyse. Her love and dedication to the Industry is undeniable.
                                 </p>
                             </div>
                         </div>
@@ -45,9 +45,9 @@ else {
                                     What we do
                                 </p>
                                 <p class="treatment-desc  text-center">
-                                    Beauty Boutique By Elyse oers a variety of specialist treatments includingLaser Hair Removal and Advanced Facial Treatments targeting all age groupsand all skin types. Elyse is highly accredited and experienced in Laser HairRemoval and oers clients a private and relaxing environment for theirtreatment. Elyse is committed to ensuring every client has a positiveexperience from the moment they step into her boutique. Whether you stepthrough the door for an Advanced Facial, Beauty Treatment or Laser HairRemoval you will be greeted with a warm, friendly and professional welcomeevery single time. Click on the treatments tab for more information.
+                                    Beauty Boutique By Elyse offers a variety of specialist treatments includingLaser Hair Removal and Advanced Facial Treatments targeting all age groups and all skin types. Elyse is highly accredited and experienced in Laser HairRemoval and offers clients a private and relaxing environment for their treatment. Elyse is committed to ensuring every client has a positive experience from the moment they step into her boutique. Whether you step through the door for an Advanced Facial, Beauty Treatment or Laser HairRemoval you will be greeted with a warm, friendly and professional welcome every single time. Click on the treatments tab for more information.
                                     <br/> <br/> <br/>
-                                    Book with Elyse today — you deserve the best treatment and you will nd thatat Beauty Boutique By Elyse.
+                                    Book with Elyse today — you deserve the best treatment and you will find that at Beauty Boutique By Elyse.
                                 </p>
                             </div>
                         </div>
