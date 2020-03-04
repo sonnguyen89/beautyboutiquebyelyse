@@ -60,7 +60,7 @@
         <div class="carousel-item">
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
-                <p class="hero-subtitle">TElyse takes pride in all of her treatments. Elyse genuinely cares for her clients
+                <p class="hero-subtitle">Elyse takes pride in all of her treatments. Elyse genuinely cares for her clients
                     and always makes me feel comfortable when I have an appointment.
                     Elyse’s work is very professional and all of her treatments are very thorough
                     <br/>
