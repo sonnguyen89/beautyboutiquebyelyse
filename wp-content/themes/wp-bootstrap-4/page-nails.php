@@ -33,7 +33,7 @@ else {
                             <div class="col-md-6" style="margin-bottom: 15px;">
                                 <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/nails.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    Nails (Shellac Application)
+                                    Shellac Application
                                 </p>
                                 <p class="treatment-desc">
                                     Using high quality products from Italy, including a extra coat on the nail which is excellent for those who have oilier nail beds to prevent chipping and breaks.

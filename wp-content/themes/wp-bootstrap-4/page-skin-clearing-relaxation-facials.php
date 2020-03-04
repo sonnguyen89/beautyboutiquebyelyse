@@ -39,7 +39,7 @@ else {
                                     Perfect for all age groups and all skin types as this treatment is loaded with many benefits. It will make your skin looking extra dewy, glowing and healthy.
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $60
+                                    Price: $50
                                 </p>
 
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
@@ -54,7 +54,7 @@ else {
                                     Focusing on minimising your oil production, this treatment will deeply clean your skin releasing any excess build up of dirt that will be clogging up your pores.
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $60
+                                    Price: $50
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>
@@ -69,7 +69,7 @@ else {
                                     Our skin ageing facial is all about focusing on loss of elasticity in the skin. We will promote blood flow and loss of hydration which will result in more plump, smooth and tighter skin.
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $60
+                                    Price: $50
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>

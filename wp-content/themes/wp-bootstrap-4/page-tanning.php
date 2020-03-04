@@ -33,7 +33,7 @@ else {
                             <div class="col-md-6" style="margin-bottom: 15px;">
                                 <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/spray_tanning.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    Spray Tanning
+                                    Full Body Spray Tan
                                 </p>
                                 <p class="treatment-desc">
 
@@ -48,13 +48,13 @@ else {
                             <div class="col-md-6">
                                 <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/mobile_spray_tanning.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    Mobile Spray Tanning (I come too you!)
+                                    Mobile Spray Tanning
                                 </p>
                                 <p class="treatment-desc">
 
                                 </p>
                                 <p class="treatment-price">
-                                    Price: Depends on location
+                                    Price: Depending on location
 
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>

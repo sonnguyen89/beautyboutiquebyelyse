@@ -39,7 +39,7 @@ else {
                                     Laser treatment for hair removal means you can throw out the razors! This means fast, reliable, permanent hair reduction! Using medical grade laser proven to give immaculate results.
                                 </p>
                                 <p class="treatment-price">
-                                    Price:
+                                    Price: <a href="/wp-content/uploads/beauty boutique price list - laser hair removal.pdf"  style="color: #fca7c8;" target="_blank">Price list</a>
                                 </p>
 
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
@@ -54,7 +54,7 @@ else {
                                     We provide you with the latest techniques and products for your waxing treatments. All our therapists are qualified professionals.
                                 </p>
                                 <p class="treatment-price">
-                                    Price:
+                                    Price: <a href="/wp-content/uploads/beauty boutique price list - waxing.pdf" style="color: #fca7c8;" target="_blank">Price list</a>
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>

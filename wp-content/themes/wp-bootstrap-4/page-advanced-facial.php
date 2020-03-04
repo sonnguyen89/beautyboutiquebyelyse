@@ -36,7 +36,7 @@ else {
                                     SKIN NEEDLING
                                 </p>
                                 <p class="treatment-desc">
-                                    This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, ﬁne lines, wrinkles, uneven skin tone, enlarged pores and sun damage
+                                    This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, fine lines, wrinkles, uneven skin tone,enlarged pores, pigmentation and sun damage.
                                 </p>
                                 <p class="treatment-price">
                                     Price: $150
@@ -48,13 +48,14 @@ else {
                             <div class="col-md-6">
                                 <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/microdermabrasion_treatment.jpg" alt=""/>
                                 <p class="treatment-title">
-                                    MICRODERMABRASION
+                                    MICRODERMABRASION DELUXE 7 STEP
                                 </p>
                                 <p class="treatment-desc">
-                                    An advanced professional mechanical exfoliation of the skin which will minimise your dead skin cells and impurities. It will also improve skins texture and quality leaving you with healthier, glowing skin.
+                                    An advanced, professional, mechanical exfoliation of the skin whichwill minimise your dead skin cells and impurities. It will improve skins texture and remove congestion. Our Microdermabrasion Deluxe treatment also includes a facial steam and a customised mask to suit your skin type.
                                 </p>
                                 <p class="treatment-price">
-                                    Price: $60
+                                    Price: $60 <br/>
+                                    <strong>MARCH PROMOTION $40</strong>
                                 </p>
                                 <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
                             </div>

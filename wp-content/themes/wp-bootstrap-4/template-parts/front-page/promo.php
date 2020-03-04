@@ -13,9 +13,20 @@
         <div class="carousel-item active">
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
-                <h1 class="slider-title">Skin needling now $100 <br/> valued at $150 </h1>
-                <p class="hero-subtitle"></p>
+                <h1 class="slider-title">Microdermabrasion NOW $40 usually $60 <br/> </h1>
+                <p class="hero-subtitle">OR pre-purchase 4 or more treatments and pay ONLY $30 per treatment.</p>
                 <p><a class="btn hero-button" role="button" href="/advanced-facial/">Learn More</a></p>
+            </div> <!-- /Text Layer -->
+        </div> <!-- /item -->
+        <!-- End of First Slide -->
+
+        <!-- First Slide -->
+        <div class="carousel-item">
+            <!-- Text Layer -->
+            <div class="testimonial_095_slide">
+                <h1 class="slider-title">Refer a friend </h1>
+                <p class="hero-subtitle">and both of you will receive 10% OFF your next salon treatment</p>
+                <p><a class="btn hero-button" role="button" href="/book-online/">Learn More</a></p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
         <!-- End of First Slide -->
@@ -37,7 +48,7 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#testimonial_095" data-slide-to="0" class="active"></li>
- <!--       <li data-target="#testimonial_095" data-slide-to="1"></li>
-        <li data-target="#testimonial_095" data-slide-to="2"></li>-->
+        <li data-target="#testimonial_095" data-slide-to="1"></li>
+        <!--   <li data-target="#testimonial_095" data-slide-to="2"></li>-->
     </ol>
 </div>
