@@ -14,7 +14,7 @@
             <!-- Text Layer -->
             <div class="testimonial_095_slide">
                 <h1 class="slider-title">Microdermabrasion NOW $40 usually $60 <br/> </h1>
-                <p class="hero-subtitle">OR pre-purchase 4 or more treatments and pay ONLY $30 per treatment.</p>
+                <p class="hero-subtitle"></p>
                 <p><a class="btn hero-button" role="button" href="/advanced-facial/">Learn More</a></p>
             </div> <!-- /Text Layer -->
         </div> <!-- /item -->
