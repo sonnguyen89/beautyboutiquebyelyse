@@ -15,35 +15,27 @@ get_header();
                     <?php //the_content(); ?>
                 <?php endwhile; ?>
                 <div class="row">
-                    <div class="col-md-6" style="margin-bottom: 15px;">
-                        <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/skin_needling_treatment.jpg" alt=""/>
-                        <p class="treatment-title">
-                            SKIN NEEDLING
-                        </p>
-                        <p class="treatment-desc">
-                            This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, fine lines, wrinkles, uneven skin tone,enlarged pores, pigmentation and sun damage.
-                        </p>
-                        <p class="treatment-price">
-                            Price: $150
-                        </p>
+                    <?php $treatment_items = get_field('treatments'); ?>
+                    <?php if(count($treatment_items) > 0): ?>
+                    <?php foreach($treatment_items as $item): ?>
+                        <div class="col-md-6" style="margin-bottom: 15px;">
+                            <img class="treatment-image" src="<?php echo $item['image']['url'] ?>" alt=""/>
+                            <p class="treatment-title">
+                               <?php echo $item['title']; ?>
+                            </p>
+                            <p class="treatment-desc">
+                                <?php echo $item['description']; ?>
+                            </p>
+                            <p class="treatment-price">
+                                <?php echo $item['price']; ?>
+                            </p>
 
-                        <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
+                            <?php echo $item['link']; ?>
 
-                    </div>
-                    <div class="col-md-6">
-                        <img class="treatment-image" src="/wp-content/themes/wp-bootstrap-4/assets/images/microdermabrasion_treatment.jpg" alt=""/>
-                        <p class="treatment-title">
-                            MICRODERMABRASION DELUXE 7 STEP
-                        </p>
-                        <p class="treatment-desc">
-                            An advanced, professional, mechanical exfoliation of the skin whichwill minimise your dead skin cells and impurities. It will improve skins texture and remove congestion. Our Microdermabrasion Deluxe treatment also includes a facial steam and a customised mask to suit your skin type.
-                        </p>
-                        <p class="treatment-price">
-                            Price: $60 <br/>
-                            <strong>MARCH PROMOTION $40</strong>
-                        </p>
-                        <a href="/book-online/" class="treatment-link">Book me in &gt;</a>
-                    </div>
+                        </div>
+                    <?php endforeach; ?>
+                    <?php endif; ?>
+                    <!-- END OF DISPLAY TREATMENT ITEMS --->
                 </div>
             </div>
         </div>
