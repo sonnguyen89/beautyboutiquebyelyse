@@ -14,10 +14,14 @@ get_header();
                     <?php wp_bootstrap_4_post_thumbnail(); ?>
                     <?php //the_content(); ?>
                 <?php endwhile; ?>
-                <div class="row">
-                    <?php $treatment_items = get_field('treatments'); ?>
-                    <?php if(count($treatment_items) > 0): ?>
+                <?php $treatment_items = get_field('treatments'); ?>
+                <?php if(count($treatment_items) > 0): ?>
+                    <?php $index = 0?>
                     <?php foreach($treatment_items as $item): ?>
+                        <?php $index++; ?>
+                        <?php if($index % 2 != 0): ?>
+                            <?php echo"<div class='row' style='margin-bottom: 30px;'>"; ?>
+                        <?php endif; ?>
                         <div class="col-md-6" style="margin-bottom: 15px;">
                             <img class="treatment-image" src="<?php echo $item['image']['url'] ?>" alt=""/>
                             <p class="treatment-title">
@@ -29,14 +33,14 @@ get_header();
                             <p class="treatment-price">
                                 <?php echo $item['price']; ?>
                             </p>
-
                             <?php echo $item['link']; ?>
-
                         </div>
+                        <?php if($index % 2 == 0): ?>
+                            <?php echo "</div>"; ?>
+                        <?php endif; ?>
                     <?php endforeach; ?>
-                    <?php endif; ?>
-                    <!-- END OF DISPLAY TREATMENT ITEMS --->
-                </div>
+                <?php endif; ?>
+                <!-- END OF DISPLAY TREATMENT ITEMS --->
             </div>
         </div>
 
