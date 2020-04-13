@@ -21,7 +21,7 @@ get_header();
                             SKIN NEEDLING
                         </p>
                         <p class="treatment-desc">
-                            This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, fine lines, wrinkles, uneven skin tone,enlarged pores, pigmhttp://local.beautyboutiquebyelyse.com.au/advanced-facial-2/entation and sun damage.
+                            This treatment will stimulate the production of your collagen and elastin. It will eliminate your acne scarring, fine lines, wrinkles, uneven skin tone,enlarged pores, pigmentation and sun damage.
                         </p>
                         <p class="treatment-price">
                             Price: $150
