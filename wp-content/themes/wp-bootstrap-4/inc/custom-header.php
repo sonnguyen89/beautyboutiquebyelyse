@@ -47,6 +47,7 @@ if ( ! function_exists( 'wp_bootstrap_4_header_style' ) ) :
 
 		if ( get_header_image() ) : ?>
 			<style type="text/css">
+                .page-template-template-treatments  .wp-bs-4-jumbotron,
                 .page-template-default  .wp-bs-4-jumbotron,
 				.wb-bp-front-page .wp-bs-4-jumbotron {
 					background-image: url(<?php echo esc_url( get_header_image() ); ?>);
