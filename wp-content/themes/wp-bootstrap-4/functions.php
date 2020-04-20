@@ -199,3 +199,35 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+add_filter('admin_init', 'my_general_settings_fields');
+
+
+function my_general_settings_fields()
+{
+    register_setting('general', 'my_phone_field', 'esc_attr');
+    add_settings_field('my_phone_field', '<label for="my_phone_field">'.__('My Phone' , 'my_phone_field' ).'</label>' , 'my_phone_general_settings_fields_html', 'general');
+
+    register_setting('general', 'my_address_field', 'esc_attr');
+    add_settings_field('my_address_field', '<label for="my_address_field">'.__('My Address' , 'my_address_field' ).'</label>' , 'my_address_general_settings_fields_html', 'general');
+
+    register_setting('general', 'my_email_field', 'esc_attr');
+    add_settings_field('my_email_field', '<label for="my_email_field">'.__('My Email' , 'my_email_field' ).'</label>' , 'my_email_general_settings_fields_html', 'general');
+}
+
+function my_phone_general_settings_fields_html()
+{
+    $value = get_option( 'my_phone_field', '' );
+    echo '<input type="text" id="my_phone_field" name="my_phone_field" value="' . $value . '" />';
+}
+
+function my_address_general_settings_fields_html() {
+    $value = get_option( 'my_address_field', '' );
+    echo '<input type="text" id="my_address_field" name="my_address_field" value="' . $value . '" />';
+}
+
+function my_email_general_settings_fields_html() {
+    $value = get_option( 'my_email_field', '' );
+    echo '<input type="text" id="my_email_field" name="my_email_field" value="' . $value . '" />';
+}

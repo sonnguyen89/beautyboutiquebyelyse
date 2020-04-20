@@ -29,14 +29,17 @@
         <div class="container">
             <div class="row">
                 <div class="col contact-information">
-                    <div class="float-left" style="padding:7px"><span><i class="fa fa-phone"></i>&nbsp;0488 125 904</span><span><i class="fa fa-map-marker"></i>&nbsp;Greenvale, Victoria</span></div>
+                    <?php $my_phone =  get_option( 'my_phone_field', '' ); ?>
+                    <?php $my_address =  get_option( 'my_address_field', '' ); ?>
+                    <?php $my_email =  get_option( 'my_email_field', '' ); ?>
+                    <div class="float-left" style="padding:7px"><span><i class="fa fa-phone"></i>&nbsp;<?php echo $my_phone; ?></span><span><i class="fa fa-map-marker"></i>&nbsp;<?php echo $my_address; ?></span></div>
                 </div>
                 <div class="col social-links">
                     <div class="float-right">
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="mailto:beautyboutiquebyelyse@outlook.com"><i class="fa fa-envelope"></i></a></li>
+                            <li><a href="mailto:<?php echo $my_email; ?>"><i class="fa fa-envelope"></i></a></li>
                             <li><a href="<?php echo get_home_url(); ?>/book-online/" style="font-weight: 500" class="book-now-button">BOOK NOW</a></li>
                         </ul>
                     </div>
