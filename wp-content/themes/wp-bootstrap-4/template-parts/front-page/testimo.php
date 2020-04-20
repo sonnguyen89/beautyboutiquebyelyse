@@ -1,3 +1,52 @@
+<?php $test_sliders = get_field('testimonials_slider'); ?>
+<?php if(count($test_sliders) > 0): ?>
+<div id="testimonial_096" class="carousel slide testimonial_095_indicators testimonial_095_control_button thumb_scroll_x swipe_x ps_easeOutSine" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+    <!-- Header of Slider -->
+   <div class="testimonial_095_header">
+        <h5>TESTIMONIALS</h5>
+    </div>
+
+      <!-- Wrapper For Slides -->
+    <div class="carousel-inner" role="listbox">
+        <?php foreach($test_sliders as $key => $item): ?>
+          <!--  Slide -->
+            <div class="carousel-item <?php if($key == 0): ?>active<?php endif; ?>">
+                <!-- Text Layer -->
+                <div class="testimonial_095_slide">
+                    <p class="hero-subtitle"><?php echo $item['content']; ?></p>
+                </div> <!-- /Text Layer -->
+            </div> <!-- /item -->
+            <!-- End of Slide -->
+        <?php endforeach; ?>
+    </div>
+
+     <!-- Left Control -->
+    <a class="carousel-control-prev" href="#testimonial_096" data-slide="prev">
+        <!--<span class="fal fa-chevron-left"></span>-->
+        <img src="/wp-content/themes/wp-bootstrap-4/assets/images/left-arrow.png" />
+    </a>
+
+    <!-- Right Control -->
+    <a class="carousel-control-next" href="#testimonial_096" data-slide="next">
+       <!-- <span class="fa fa-chevron-right"></span>-->
+        <img src="/wp-content/themes/wp-bootstrap-4/assets/images/right-arrow.png" />
+    </a>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+    <?php $index = 0; ?>
+    <?php foreach($test_sliders as $item): ?>
+        <?php if($index == 0): ?>
+            <li data-target="#testimonial_096" data-slide-to="<?php echo $index; ?>" class="active"></li>
+        <?php else: ?>
+            <li data-target="#testimonial_096" data-slide-to="<?php echo $index; ?>"></li>
+        <?php endif; ?>
+        <?php $index++; ?>
+    <?php endforeach; ?>
+    </ol>
+</div>
+<?php else: ?>
 <div id="testimonial_096" class="carousel slide testimonial_095_indicators testimonial_095_control_button thumb_scroll_x swipe_x ps_easeOutSine" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
 
     <!-- Header of Slider -->
@@ -126,3 +175,4 @@
         <li data-target="#testimonial_096" data-slide-to="7"></li>
     </ol>
 </div>
+<?php endif; ?>
