@@ -292,17 +292,19 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
 .navbar-dark .navbar-nav .dropdown-menu .active > .nav-link { color: #212529; }
 
 .navbar-dark .navbar-nav .dropdown-menu .nav-link:hover, .navbar-dark .navbar-nav .dropdown-menu .nav-link:focus { color: #212529; }
-.page-template-template-treatments .site-footer,
+.page-template-template-treatments .site-footer,.page-template-template-aboutus .site-footer,
 .page-template-default .site-footer, .page-template-full-width .site-footer, .wb-bp-front-page .site-footer {background-color: #FCA7C8;font-family: Roboto, sans-serif;color:#fff;
   position: absolute;
   bottom: -43px;
   width: 100%;
   height: auto;
 }
+.page-template-template-aboutus .site-footer .site-info,
 .page-template-template-treatments .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info,
 .page-template-default .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info {
   text-align: left!important;
 }
+.page-template-template-aboutus .site-footer .mobile-social-links,
 .page-template-template-treatments .site-footer .mobile-social-links,
 .page-template-default .site-footer .mobile-social-links,
 .page-template-full-width .site-footer .mobile-social-links,
@@ -310,6 +312,7 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
   display: none;
   text-align: center!important;
 }
+.page-template-template-aboutus .site-footer .social-links,
 .page-template-template-treatments .site-footer .social-links,
 .page-template-default .site-footer .social-links, 
 .page-template-full-width .site-footer .social-links, 
@@ -317,6 +320,7 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
   text-align: right!important;
 }
 @media (max-width: 575px) {
+  .page-template-template-aboutus .mobile-social-links,
   .page-template-template-treatments .mobile-social-links,
   .page-template-default .site-footer .mobile-social-links,
   .page-template-full-width .site-footer .mobile-social-links,
@@ -326,6 +330,7 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .page-template-template-aboutus .site-footer .social-links,
   .page-template-template-treatments .site-footer .social-links,
   .page-template-default .site-footer .social-links,
   .page-template-full-width .site-footer .social-links,
@@ -334,11 +339,13 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
   }
 }
 @media (max-width: 760px) {
+  .page-template-template-aboutus .site-footer .social-links,
   .page-template-template-treatments .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links,
   .page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links,
   .page-template-default .site-footer .site-info, .page-template-full-width .site-footer .site-info, .wb-bp-front-page .site-footer .site-info {
     text-align: center!important;
   }
+  .page-template-template-aboutus .site-footer,
   .page-template-template-treatments .site-footer, .page-template-full-width .site-footer, .wb-bp-front-page .site-footer,
   .page-template-default .site-footer, .page-template-full-width .site-footer, .wb-bp-front-page .site-footer {
       background-color: #FCA7C8;
@@ -348,6 +355,7 @@ select { height: calc(2.25rem + 2px); display: block; width: 100%; padding: .375
       font-size: 12px;
       bottom : 0;
   }
+  .page-template-aboutus .site-footer .social-links,
   .page-template-template-treatments .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links,
   .page-template-default .site-footer .social-links, .page-template-full-width .site-footer .social-links, .wb-bp-front-page .site-footer .social-links {
     font-size: 20px;
@@ -376,6 +384,7 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
 
 .wb-bp-front-page .site-header { border-bottom: 0; }
 
+.page-template-template-aboutus .wp-bs-4-jumbotron,
 .page-template-template-treatments .wp-bs-4-jumbotron,
 .page-template-default .wp-bs-4-jumbotron,
 .wb-bp-front-page .wp-bs-4-jumbotron { padding: 0;
@@ -385,42 +394,52 @@ body.custom-background .wp-bp-main-content .col-md-8 { background: #f8f9fa; padd
   border-radius: 0;
   background-repeat: no-repeat;
 }
+.page-template-template-aboutus .wp-bs-4-jumbotron .wp-bp-jumbo-overlay,
 .page-template-template-treatments .wp-bs-4-jumbotron .wp-bp-jumbo-overlay,
 .page-template-default .wp-bs-4-jumbotron .wp-bp-jumbo-overlay,
 .wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay { padding: 10rem 2rem; /* background: rgba(#212529, 0.7); */ }
 
+.page-template-template-aboutus .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .lead,
 .page-template-template-treatments .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .lead,
 .page-template-default .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .lead,
 .wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .lead { opacity: .75; }
 
+.page-template-template-aboutus .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading,
 .page-template-template-treatments .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading,
 .page-template-default .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading,
 .wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading { font-weight: 600; font-size: 3rem; margin-bottom: 1rem; }
 
+.page-template-template-aboutus .wp-bp-services-section,
 .page-template-template-treatments .wp-bp-services-section,
 .page-template-default .wp-bp-services-section,
 .wb-bp-front-page .wp-bp-services-section { padding: 4rem 0; }
 
+.page-template-template-aboutus .wp-bp-main-content,
 .page-template-template-treatments .wp-bp-main-content,
 .page-template-default .wp-bp-main-content,
 .wb-bp-front-page .wp-bp-main-content { padding: 4rem 0; }
 
+.page-template-template-aboutus .wp-bp-main-content p,
 .page-template-template-treatments .wp-bp-main-content p,
 .page-template-default .wp-bp-main-content p,
 .wb-bp-front-page .wp-bp-main-content p { font-size: 1.25rem; font-weight: 300;font-family: Roboto, sans-serif }
 
+.page-template-template-aboutus .wp-bp-main-content blockquote,
 .page-template-template-treatments .wp-bp-main-content blockquote,
 .page-template-default .wp-bp-main-content blockquote,
 .wb-bp-front-page .wp-bp-main-content blockquote { font-size: 1.35rem; }
 
+.page-template-template-aboutus .wp-bp-main-content blockquote p,
 .page-template-template-treatments .wp-bp-main-content blockquote p,
 .page-template-default .wp-bp-main-content blockquote p,
 .wb-bp-front-page .wp-bp-main-content blockquote p { font-size: 1.35rem; }
 
-.page-template-template-treatments .wp-bp-main-content .post-thumbnail ,
+.page-template-template-aboutus .wp-bp-main-content .post-thumbnail,
+.page-template-template-treatments .wp-bp-main-content .post-thumbnail,
 .page-template-default .wp-bp-main-content .post-thumbnail ,
 .wb-bp-front-page .wp-bp-main-content .post-thumbnail { margin-bottom: 1rem; margin-top: 0.5rem; }
 
+.page-template-template-aboutus .wp-bp-feat-card-img,
 .page-template-template-treatments .wp-bp-feat-card-img,
 .page-template-default .wp-bp-feat-card-img,
 .wb-bp-front-page .wp-bp-feat-card-img { -o-object-fit: cover; object-fit: cover; height: 200px; width: 100%; }
@@ -625,6 +644,7 @@ div.jumbotron.hero-technology .hero-button:hover {
 /*--------------------------------------------------------------
 # booking form  Section and contract section of treatment page and default page
 --------------------------------------------------------------*/
+.page-template-template-aboutus .wp-bp-contract-content,
 .page-template-template-treatments .wp-bp-contract-content,
 .page-template-default .wp-bp-contract-content,
 .wb-bp-front-page  .wp-bp-contract-content {
@@ -633,16 +653,19 @@ div.jumbotron.hero-technology .hero-button:hover {
   font-family: Roboto, sans-serif;
   padding-bottom: 20px;
 }
+.page-template-template-aboutus .wp-bp-contract-content,
 .page-template-template-treatments .wp-bp-contract-content,
 .page-template-default .wp-bp-contract-content {
   padding-left: 0;
   padding-right: 0;
 }
+.page-template-template-aboutus .wp-bp-contract-content .mobile-social-links,
 .page-template-template-treatments .wp-bp-contract-content .mobile-social-links,
 .page-template-default  .wp-bp-contract-content .mobile-social-links,
 .wb-bp-front-page .wp-bp-contract-content .mobile-social-links {
   display: none;
 }
+.page-template-template-aboutus .wp-bp-contract-content .social-links ul,
 .page-template-template-treatments .wp-bp-contract-content .social-links ul,
 .page-template-default .wp-bp-contract-content .social-links ul,
 .wb-bp-front-page .wp-bp-contract-content .social-links ul {
@@ -650,12 +673,14 @@ div.jumbotron.hero-technology .hero-button:hover {
   padding-left: 0;
   margin: 0;
 }
+.page-template-template-aboutus .wp-bp-contract-content .social-links ul a,
 .page-template-template-treatments .wp-bp-contract-content .social-links ul a,
 .page-template-default .wp-bp-contract-content .social-links ul a,
 .wb-bp-front-page .wp-bp-contract-content .social-links ul a {
   color: #999999;
   text-decoration: none;
 }
+.page-template-template-aboutus .wp-bp-contract-content .social-links,
 .page-template-template-treatments .wp-bp-contract-content .social-links,
 .page-template-default .wp-bp-contract-content .social-links,
 .wb-bp-front-page .wp-bp-contract-content .social-links
@@ -667,22 +692,26 @@ div.jumbotron.hero-technology .hero-button:hover {
   left: 8%;
   float:left;
 }
+.page-template-template-aboutus .wp-bp-contract-content .social-links i,
 .page-template-template-treatments .wp-bp-contract-content .social-links i,
 .page-template-default .wp-bp-contract-content .social-links i,
 .wb-bp-front-page .wp-bp-contract-content .social-links i {
   margin-right: 23px;
   font-size: 25px;
 }
+.page-template-template-aboutus .wp-bp-contract-content img,
 .page-template-template-treatments .wp-bp-contract-content img,
 .page-template-default .wp-bp-contract-content img {
   width: 80% !important;
 }
 @media (max-width: 575px) {
+  .page-template-template-aboutus .wp-bp-contract-content img,
   .page-template-template-treatments .wp-bp-contract-content img,
   .page-template-default .wp-bp-contract-content img,
   .wb-bp-front-page .wp-bp-contract-content img {
     width: 100% !important;
   }
+  .page-template-template-aboutus .wp-bp-contract-content .social-links,
   .page-template-template-treatments .wp-bp-contract-content .social-links,
   .page-template-default .wp-bp-contract-content .social-links,
   .wb-bp-front-page .wp-bp-contract-content .social-links
@@ -692,22 +721,26 @@ div.jumbotron.hero-technology .hero-button:hover {
     width: 90%;
     float: none;
   }
+  .page-template-template-aboutus .wp-bp-contract-content .social-links ul,
   .page-template-template-treatments .wp-bp-contract-content .social-links ul,
   .page-template-default .wp-bp-contract-content .social-links ul,
   .wb-bp-front-page  .wp-bp-contract-content .social-links ul {
     float:left;
   }
+  .page-template-template-aboutus .wp-bp-contract-content .social-links ul li,
   .page-template-template-treatments .wp-bp-contract-content .social-links ul li,
   .page-template-default .wp-bp-contract-content .social-links ul li,
   .wb-bp-front-page  .wp-bp-contract-content .social-links ul li{
     text-align: left;
   }
+  .page-template-template-aboutus,
   .page-template-template-treatments,
   .page-template-default .wp-bp-contract-content .social-links i,
   .wb-bp-front-page .wp-bp-contract-content .social-links i {
     margin-right: 10px;
   }
 }
+.page-template-template-aboutus .wp-bp-main-content img,
 .page-template-template-treatments .wp-bp-main-content img,
 .page-template-default .wp-bp-main-content img,
 .wb-bp-front-page  .wp-bp-contract-content img
@@ -722,11 +755,13 @@ div.jumbotron.hero-technology .hero-button:hover {
 /*--------------------------------------------------------------
 # advance facial treatment page
 --------------------------------------------------------------*/
+.page-template-template-aboutus .wp-bp-main-content .text-center,
 .page-template-template-treatments .wp-bp-main-content .text-center,
 .page-template-default .wp-bp-main-content .text-center {
   text-transform: uppercase;
   color: #c9b88a;
 }
+.page-template-template-aboutus .wp-bp-main-content .treatment-title,
 .page-template-template-treatments .wp-bp-main-content .treatment-title,
 .page-template-default .wp-bp-main-content .treatment-title {
   text-transform: uppercase;
@@ -734,17 +769,20 @@ div.jumbotron.hero-technology .hero-button:hover {
   color:#fca7c8;
   margin-top: 20px;
 }
+.page-template-template-aboutus .wp-bp-main-content .treatment-price,
 .page-template-template-treatments .wp-bp-main-content .treatment-price,
 .page-template-default .wp-bp-main-content .treatment-price {
   text-transform: capitalize;
   font-weight: bold;
 }
+.page-template-template-aboutus .wp-bp-main-content .treatment-desc,
 .page-template-template-treatments .wp-bp-main-content .treatment-desc,
 .page-template-default .wp-bp-main-content .treatment-desc {
   font-size: 1rem;
   text-transform: none;
   color: #212529;
 }
+.page-template-template-aboutus .wp-bp-main-content .treatment-link,
 .page-template-template-treatments .wp-bp-main-content .treatment-link,
 .page-template-default .wp-bp-main-content .treatment-link {
   font-weight: bold;
@@ -753,6 +791,7 @@ div.jumbotron.hero-technology .hero-button:hover {
   color: #212529;
   padding-bottom: 5px;
 }
+.page-template-template-aboutus .wp-bp-main-content .treatment-link:hover,
 .page-template-template-treatments .wp-bp-main-content .treatment-link:hover,
 .page-template-default .wp-bp-main-content .treatment-link:hover{
   text-decoration: none;color:#fca7c8; border-bottom: 1px solid #fca7c8;
@@ -813,6 +852,7 @@ div.jumbotron.hero-technology .hero-button:hover {
 /*--------------------------------------------------------------
 # Contract us Form
 --------------------------------------------------------------*/
+.page-template-template-aboutus .contact-us-content,
 .page-template-template-treatments .contact-us-content,
 .page-template-default .contact-us-content {
   background-color: #f2f2f2;
