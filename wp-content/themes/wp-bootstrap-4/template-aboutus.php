@@ -38,18 +38,30 @@ get_header();
         <div class="container">
             <div class="row about-first-image-row">
                 <div class="col-md-7">
-                    <img src="/wp-content/themes/wp-bootstrap-4/assets/images/about-img-1.jpg" />
+                <?php $image_1 = get_field('image_1'); ?>
+                <?php $image_2 = get_field('image_2'); ?>
+                <?php $image_3 = get_field('image_3'); ?>
+                <?php $image_4 = get_field('image_4'); ?>
+                <?php if(isset($image_1)): ?>
+                    <img src="<?php echo $image_1['url'] ?>" />
+                <?php endif; ?>
                 </div>
                 <div class="col-md-5">
-                    <img src="/wp-content/themes/wp-bootstrap-4/assets/images/about-img-2.png" />
+                <?php if(isset($image_2)): ?>
+                    <img src="<?php echo $image_2['url'] ?>" />
+                <?php endif; ?>
                 </div>
             </div>
             <div class="row about-second-image-row">
                 <div class="col-md-5">
-                    <img src="/wp-content/themes/wp-bootstrap-4/assets/images/about-img-4.jpg" />
+                <?php if(isset($image_3)): ?>
+                    <img src="<?php echo $image_3['url'] ?>" />
+                <?php endif; ?>
                 </div>
                 <div class="col-md-7">
-                    <img src="/wp-content/themes/wp-bootstrap-4/assets/images/about-img-1.jpg" />
+                <?php if(isset($image_4)): ?>
+                    <img src="<?php echo $image_4['url'] ?>" />
+                <?php endif; ?>
                 </div>
             </div>
         </div>
