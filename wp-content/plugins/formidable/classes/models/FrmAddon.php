@@ -269,7 +269,6 @@ class FrmAddon {
 	}
 
 	public function show_license_message( $file, $plugin ) {
-		return true;
 		$message = '';
 		if ( empty( $this->license ) ) {
 			/* translators: %1$s: Plugin name, %2$s: Start link HTML, %3$s: end link HTML */

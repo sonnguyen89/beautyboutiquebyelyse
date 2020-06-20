@@ -1128,13 +1128,17 @@ class FrmFieldsHelper {
 	 * @return array $other_args
 	 */
 	public static function prepare_other_input( $args, &$other_opt, &$checked ) {
+		$other_args = array(
+			'name'  => '',
+			'value' => '',
+		);
+
 		//Check if this is an "Other" option
 		if ( ! self::is_other_opt( $args['opt_key'] ) ) {
-			return;
+			return $other_args;
 		}
 
 		$other_opt  = true;
-		$other_args = array();
 
 		self::set_other_name( $args, $other_args );
 		self::set_other_value( $args, $other_args );
@@ -1616,6 +1620,7 @@ class FrmFieldsHelper {
 			__( 'Zimbabwe', 'formidable' ),
 		);
 
+		sort( $countries, SORT_LOCALE_STRING );
 		return apply_filters( 'frm_countries', $countries );
 	}
 
@@ -1701,6 +1706,57 @@ class FrmFieldsHelper {
 		unset( $field_array['field_options'] );
 
 		return $field_array + $field_options;
+	}
+
+	/**
+	 * @since 4.04
+	 */
+	public static function show_add_field_buttons( $args ) {
+		$field_key      = $args['field_key'];
+		$field_type     = $args['field_type'];
+		$field_label    = FrmAppHelper::icon_by_class( FrmFormsHelper::get_field_link_icon( $field_type ), array( 'echo' => false ) );
+		$field_name     = FrmFormsHelper::get_field_link_name( $field_type );
+		$field_label   .= ' <span>' . $field_name . '</span>';
+
+		/* translators: %s: Field name */
+		$upgrade_label = sprintf( esc_html__( '%s fields', 'formidable' ), $field_name );
+
+		// If the individual field isn't allowed, disable it.
+		$run_filter      = true;
+		$single_no_allow = ' ';
+		$install_data    = '';
+		$requires        = '';
+		$upgrade_message = '';
+		$link            = isset( $field_type['link'] ) ? esc_url_raw( $field_type['link'] ) : '';
+		if ( strpos( $field_type['icon'], ' frm_show_upgrade' ) ) {
+			$single_no_allow   .= 'frm_show_upgrade';
+			$field_type['icon'] = str_replace( ' frm_show_upgrade', '', $field_type['icon'] );
+			$run_filter         = false;
+			if ( isset( $field_type['addon'] ) ) {
+				$upgrading = FrmAddonsController::install_link( $field_type['addon'] );
+				if ( isset( $upgrading['url'] ) ) {
+					$install_data = json_encode( $upgrading );
+				}
+				$requires = FrmFormsHelper::get_plan_required( $upgrading );
+			} elseif ( isset( $field_type['require'] ) ) {
+				$requires = $field_type['require'];
+			}
+		}
+
+		if ( isset( $field_type['message'] ) ) {
+			$upgrade_message = FrmAppHelper::kses( $field_type['message'], array( 'a', 'img' ) );
+		}
+
+		?>
+		<li class="frmbutton <?php echo esc_attr( $args['no_allow_class'] . $single_no_allow . ' frm_t' . str_replace( '|', '-', $field_key ) ); ?>" id="<?php echo esc_attr( $field_key ); ?>" data-upgrade="<?php echo esc_attr( $upgrade_label ); ?>" data-message="<?php echo esc_attr( $upgrade_message ); ?>" data-link="<?php echo esc_attr( $link ); ?>" data-medium="builder" data-oneclick="<?php echo esc_attr( $install_data ); ?>" data-content="<?php echo esc_attr( $field_key ); ?>" data-requires="<?php echo esc_attr( $requires ); ?>">
+		<?php
+		if ( $run_filter ) {
+			$field_label = apply_filters( 'frmpro_field_links', $field_label, $args['id'], $field_key );
+		}
+		echo FrmAppHelper::kses( $field_label, array( 'a', 'i', 'span', 'use', 'svg' ) ); // WPCS: XSS ok.
+		?>
+		</li>
+		<?php
 	}
 
 	/**

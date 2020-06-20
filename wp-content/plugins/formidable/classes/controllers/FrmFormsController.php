@@ -122,8 +122,10 @@ class FrmFormsController {
 		$id = FrmAppHelper::get_param( 'id', '', 'get', 'absint' );
 
 		$errors = FrmForm::validate( $_POST );
+		$warnings = FrmFormsHelper::check_for_warnings( $_POST );
+
 		if ( count( $errors ) > 0 ) {
-			return self::get_settings_vars( $id, $errors );
+			return self::get_settings_vars( $id, $errors, compact( 'warnings' ) );
 		}
 
 		do_action( 'frm_before_update_form_settings', $id );
@@ -132,7 +134,7 @@ class FrmFormsController {
 
 		$message = __( 'Settings Successfully Updated', 'formidable' );
 
-		return self::get_settings_vars( $id, array(), $message );
+		return self::get_settings_vars( $id, array(), compact( 'message', 'warnings' ) );
 	}
 
 	public static function update( $values = array() ) {
@@ -897,10 +899,25 @@ class FrmFormsController {
 		}
 	}
 
-	public static function get_settings_vars( $id, $errors = array(), $message = '' ) {
+	public static function get_settings_vars( $id, $errors = array(), $args = array() ) {
 		FrmAppHelper::permission_check( 'frm_edit_forms' );
 
 		global $frm_vars;
+
+		if ( ! is_array( $args ) ) {
+			// For reverse compatibility.
+			$args = array(
+				'message' => $args,
+			);
+		}
+
+		$defaults = array(
+			'message'  => '',
+			'warnings' => array(),
+		);
+		$args     = array_merge( $defaults, $args );
+		$message  = $args['message'];
+		$warnings = $args['warnings'];
 
 		$form   = FrmForm::getOne( $id );
 		$fields = FrmField::get_all_for_form( $id );
@@ -1384,14 +1401,35 @@ class FrmFormsController {
 		return $errors;
 	}
 
+	/**
+	 * Education for premium features.
+	 *
+	 * @since 4.05
+	 */
+	public static function add_form_style_tab_options() {
+		include( FrmAppHelper::plugin_path() . '/classes/views/frm-forms/add_form_style_options.php' );
+	}
+
 	/* FRONT-END FORMS */
 	public static function admin_bar_css() {
 		if ( is_admin() || ! current_user_can( 'frm_edit_forms' ) ) {
 			return;
 		}
 
+		self::move_menu_to_footer();
+
 		add_action( 'wp_before_admin_bar_render', 'FrmFormsController::admin_bar_configure' );
 		FrmAppHelper::load_font_style();
+	}
+
+	/**
+	 * @since 4.05.02
+	 */
+	private static function move_menu_to_footer() {
+		$settings = FrmAppHelper::get_settings();
+		if ( empty( $settings->admin_bar ) ) {
+			remove_action( 'wp_body_open', 'wp_admin_bar_render', 0 );
+		}
 	}
 
 	public static function admin_bar_configure() {
@@ -1832,7 +1870,28 @@ class FrmFormsController {
 		global $frm_vars;
 		self::maybe_load_css( $form, $values['custom_style'], $frm_vars['load_css'] );
 
+		$message_placement = self::message_placement( $form, $message );
+
 		include( FrmAppHelper::plugin_path() . '/classes/views/frm-entries/new.php' );
+	}
+
+	/**
+	 * @return string - 'before' or 'after'
+	 *
+	 * @since 4.05.02
+	 */
+	private static function message_placement( $form, $message ) {
+		$place = 'before';
+		if ( ! empty( $message ) && isset( $form->options['form_class'] ) && strpos( $form->options['form_class'], 'frm_below_success' ) !== false ) {
+			$place = 'after';
+		}
+
+		/**
+		 * @return string - 'before' or 'after'
+		 *
+		 * @since 4.05.02
+		 */
+		return apply_filters( 'frm_message_placement', $place, compact( 'form', 'message' ) );
 	}
 
 	/**
