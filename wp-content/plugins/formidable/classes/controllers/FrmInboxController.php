@@ -24,6 +24,19 @@ class FrmInboxController {
 	}
 
 	/**
+	 * @since 4.06
+	 */
+	public static function dismiss_all_button( $atts ) {
+		if ( empty( $atts['messages'] ) ) {
+			return;
+		}
+
+		echo '<button class="button-secondary frm-button-secondary" id="frm-dismiss-inbox" type="button">' .
+			esc_html__( 'Dismiss All', 'formidable' ) .
+			'</button>';
+	}
+
+	/**
 	 * @since 4.05
 	 */
 	public static function inbox() {
@@ -31,7 +44,7 @@ class FrmInboxController {
 		self::add_tracking_request();
 
 		$inbox    = new FrmInbox();
-		$messages = $inbox->get_messages();
+		$messages = $inbox->get_messages( 'filter' );
 		$messages = array_reverse( $messages );
 		$user     = wp_get_current_user();
 
